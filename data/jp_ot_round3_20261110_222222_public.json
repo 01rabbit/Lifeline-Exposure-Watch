@@ -1,0 +1,943 @@
+{
+ "tool": "jp_ot_exposure",
+ "mode": "round3",
+ "started_at": "2026-11-10T22:22:22+0900",
+ "run_date": "2026-11-10",
+ "windows": {
+  "R7": "after:03/11/2026",
+  "R16": "after:25/10/2026",
+  "R30": "after:11/10/2026"
+ },
+ "results": {
+  "sv_html_jp": {
+   "summary": {
+    "http.html_hash_distinct": 43,
+    "http.html_hash_top1_share": 0.405
+   },
+   "query": "http.html:\"SolarView\" country:JP",
+   "case": "round3",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:22:22+0900",
+   "total": 1057,
+   "facets": {
+    "product": [
+     {
+      "count": 626,
+      "value": "SolarView Compact"
+     },
+     {
+      "count": 19,
+      "value": "lighttpd"
+     },
+     {
+      "count": 1,
+      "value": "Apache httpd"
+     }
+    ],
+    "http.html_hash": [
+     428,
+     98,
+     88,
+     65,
+     59,
+     43,
+     43,
+     34,
+     28,
+     20,
+     19,
+     17,
+     14,
+     12,
+     12,
+     10,
+     10,
+     10,
+     9,
+     7,
+     6,
+     3,
+     2,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "http.title": [
+     {
+      "value": "Top",
+      "count": 611
+     },
+     {
+      "value": "Error 401",
+      "count": 428
+     },
+     {
+      "value": "SolarView Air ASP : SolarView Air Cloud Service",
+      "count": 16
+     },
+     {
+      "value": "(other titles, redacted)",
+      "count": 2
+     }
+    ],
+    "port": [
+     {
+      "count": 771,
+      "value": 80
+     },
+     {
+      "count": 65,
+      "value": 8010
+     },
+     {
+      "count": 20,
+      "value": 443
+     },
+     {
+      "count": 18,
+      "value": 81
+     },
+     {
+      "count": 13,
+      "value": 10101
+     },
+     {
+      "count": 10,
+      "value": 8000
+     },
+     {
+      "count": 9,
+      "value": 82
+     },
+     {
+      "count": 9,
+      "value": 8001
+     },
+     {
+      "count": 9,
+      "value": 50000
+     },
+     {
+      "count": 8,
+      "value": 5002
+     },
+     {
+      "count": 8,
+      "value": 8080
+     },
+     {
+      "count": 8,
+      "value": 10106
+     },
+     {
+      "count": 7,
+      "value": 83
+     },
+     {
+      "count": 6,
+      "value": 84
+     },
+     {
+      "count": 5,
+      "value": 48000
+     },
+     {
+      "count": 4,
+      "value": 5005
+     },
+     {
+      "count": 4,
+      "value": 8082
+     },
+     {
+      "count": 4,
+      "value": 10081
+     },
+     {
+      "count": 3,
+      "value": 5007
+     },
+     {
+      "count": 3,
+      "value": 8002
+     }
+    ]
+   },
+   "note": null
+  },
+  "sv_banner_jp": {
+   "summary": {},
+   "query": "\"SolarView\" country:JP",
+   "case": "round3",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:22:24+0900",
+   "total": 455,
+   "facets": {
+    "product": [
+     {
+      "count": 18,
+      "value": "lighttpd"
+     },
+     {
+      "count": 11,
+      "value": "WU-FTPD"
+     },
+     {
+      "count": 8,
+      "value": "Apache httpd"
+     }
+    ],
+    "port": [
+     {
+      "count": 264,
+      "value": 80
+     },
+     {
+      "count": 64,
+      "value": 8010
+     },
+     {
+      "count": 11,
+      "value": 21
+     },
+     {
+      "count": 9,
+      "value": 10101
+     },
+     {
+      "count": 8,
+      "value": 81
+     },
+     {
+      "count": 7,
+      "value": 5002
+     },
+     {
+      "count": 7,
+      "value": 8000
+     },
+     {
+      "count": 6,
+      "value": 10106
+     },
+     {
+      "count": 5,
+      "value": 82
+     },
+     {
+      "count": 5,
+      "value": 83
+     },
+     {
+      "count": 5,
+      "value": 84
+     },
+     {
+      "count": 4,
+      "value": 23
+     },
+     {
+      "count": 4,
+      "value": 5005
+     },
+     {
+      "count": 4,
+      "value": 8080
+     },
+     {
+      "count": 3,
+      "value": 5007
+     },
+     {
+      "count": 2,
+      "value": 88
+     },
+     {
+      "count": 2,
+      "value": 5003
+     },
+     {
+      "count": 2,
+      "value": 5004
+     },
+     {
+      "count": 2,
+      "value": 8090
+     },
+     {
+      "count": 2,
+      "value": 8888
+     }
+    ]
+   },
+   "note": null
+  },
+  "sv_both_jp": {
+   "summary": {},
+   "query": "\"SolarView\" http.html:\"SolarView\" country:JP",
+   "case": "round3",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:22:26+0900",
+   "total": 428,
+   "facets": {},
+   "note": null
+  },
+  "sv_html_top_jp": {
+   "summary": {
+    "http.html_hash_distinct": 24,
+    "http.html_hash_top1_share": 0.16
+   },
+   "query": "http.html:\"SolarView\" http.title:\"Top\" country:JP",
+   "case": "round3",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:22:28+0900",
+   "total": 611,
+   "facets": {
+    "port": [
+     {
+      "count": 513,
+      "value": 80
+     },
+     {
+      "count": 10,
+      "value": 81
+     },
+     {
+      "count": 8,
+      "value": 8001
+     },
+     {
+      "count": 7,
+      "value": 50000
+     },
+     {
+      "count": 4,
+      "value": 82
+     },
+     {
+      "count": 4,
+      "value": 443
+     },
+     {
+      "count": 4,
+      "value": 8080
+     },
+     {
+      "count": 4,
+      "value": 8082
+     },
+     {
+      "count": 4,
+      "value": 10081
+     },
+     {
+      "count": 4,
+      "value": 10101
+     }
+    ],
+    "http.html_hash": [
+     98,
+     88,
+     65,
+     59,
+     43,
+     43,
+     34,
+     28,
+     20,
+     19,
+     17,
+     14,
+     12,
+     12,
+     10,
+     10,
+     10,
+     9,
+     7,
+     6,
+     3,
+     2,
+     1,
+     1
+    ]
+   },
+   "note": null
+  },
+  "sv_html_401_jp": {
+   "summary": {},
+   "query": "http.html:\"SolarView\" http.title:\"Error 401\" country:JP",
+   "case": "round3",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:22:29+0900",
+   "total": 428,
+   "facets": {},
+   "note": null
+  },
+  "sv_compact_jp": {
+   "summary": {
+    "http.html_hash_distinct": 0,
+    "http.html_hash_top1_share": null
+   },
+   "query": "http.html:\"SV-CPT\" country:JP",
+   "case": "round3",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:22:31+0900",
+   "total": 0,
+   "facets": {
+    "http.html_hash": [],
+    "http.title": []
+   },
+   "note": null
+  },
+  "sv_air_jp": {
+   "summary": {},
+   "query": "http.html:\"SolarView Air\" country:JP",
+   "case": "round3",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:22:33+0900",
+   "total": 16,
+   "facets": {
+    "http.title": [
+     {
+      "value": "SolarView Air ASP : SolarView Air Cloud Service",
+      "count": 16
+     }
+    ]
+   },
+   "note": null
+  },
+  "sv_html_ssl_jp": {
+   "summary": {},
+   "query": "http.html:\"SolarView\" country:JP ssl:true",
+   "case": "round3",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:22:35+0900",
+   "total": 16,
+   "facets": {},
+   "note": null
+  },
+  "sv_html_r7": {
+   "summary": {},
+   "query": "http.html:\"SolarView\" country:JP after:03/11/2026",
+   "case": "round3",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:22:36+0900",
+   "total": 563,
+   "facets": {},
+   "note": null
+  },
+  "sv_html_r16": {
+   "summary": {},
+   "query": "http.html:\"SolarView\" country:JP after:25/10/2026",
+   "case": "round3",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:22:37+0900",
+   "total": 874,
+   "facets": {},
+   "note": null
+  },
+  "sv_html_r30": {
+   "summary": {},
+   "query": "http.html:\"SolarView\" country:JP after:11/10/2026",
+   "case": "round3",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:22:39+0900",
+   "total": 1057,
+   "facets": {},
+   "note": null
+  },
+  "sv_banner_r16": {
+   "summary": {},
+   "query": "\"SolarView\" country:JP after:25/10/2026",
+   "case": "round3",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:22:40+0900",
+   "total": 356,
+   "facets": {},
+   "note": null
+  },
+  "sv_html_honeypot": {
+   "summary": {},
+   "query": "http.html:\"SolarView\" country:JP tag:honeypot",
+   "case": "round3",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:22:42+0900",
+   "total": 0,
+   "facets": {},
+   "note": null
+  },
+  "sv_html_world": {
+   "summary": {},
+   "query": "http.html:\"SolarView\"",
+   "case": "round3",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:22:44+0900",
+   "total": 1274,
+   "facets": {
+    "country": [
+     {
+      "count": 1057,
+      "value": "JP"
+     },
+     {
+      "count": 100,
+      "value": "DE"
+     },
+     {
+      "count": 21,
+      "value": "CN"
+     },
+     {
+      "count": 19,
+      "value": "SE"
+     },
+     {
+      "count": 16,
+      "value": "ES"
+     },
+     {
+      "count": 14,
+      "value": "HK"
+     },
+     {
+      "count": 12,
+      "value": "US"
+     },
+     {
+      "count": 5,
+      "value": "BR"
+     },
+     {
+      "count": 5,
+      "value": "CA"
+     },
+     {
+      "count": 3,
+      "value": "AU"
+     },
+     {
+      "count": 3,
+      "value": "CL"
+     },
+     {
+      "count": 3,
+      "value": "IL"
+     },
+     {
+      "count": 3,
+      "value": "IN"
+     },
+     {
+      "count": 3,
+      "value": "ZA"
+     },
+     {
+      "count": 2,
+      "value": "FI"
+     },
+     {
+      "count": 2,
+      "value": "KR"
+     },
+     {
+      "count": 2,
+      "value": "SG"
+     },
+     {
+      "count": 1,
+      "value": "AT"
+     },
+     {
+      "count": 1,
+      "value": "GB"
+     },
+     {
+      "count": 1,
+      "value": "NL"
+     }
+    ]
+   },
+   "note": null,
+   "jp_count": 1057,
+   "jp_rank": 1
+  },
+  "ics_jp_conc_only": {
+   "summary": {},
+   "query": "tag:ics country:JP org:\"<ISP-A>\"",
+   "case": "round3",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:22:45+0900",
+   "total": 1392,
+   "facets": {
+    "product": [
+     {
+      "count": 132,
+      "value": "3S-Smart Software Solutions"
+     },
+     {
+      "count": 45,
+      "value": "Mitsubishi Q PLC"
+     },
+     {
+      "count": 3,
+      "value": "CP1H-XA40DR-A"
+     },
+     {
+      "count": 3,
+      "value": "Omron Corporation"
+     },
+     {
+      "count": 1,
+      "value": "Lantronix X90"
+     }
+    ],
+    "port": [
+     {
+      "count": 1029,
+      "value": 102
+     },
+     {
+      "count": 161,
+      "value": 502
+     },
+     {
+      "count": 132,
+      "value": 2455
+     },
+     {
+      "count": 29,
+      "value": 5007
+     },
+     {
+      "count": 16,
+      "value": 5006
+     },
+     {
+      "count": 10,
+      "value": 4840
+     },
+     {
+      "count": 7,
+      "value": 20000
+     },
+     {
+      "count": 3,
+      "value": 9600
+     },
+     {
+      "count": 3,
+      "value": 44818
+     },
+     {
+      "count": 1,
+      "value": 503
+     },
+     {
+      "count": 1,
+      "value": 30718
+     }
+    ]
+   },
+   "note": null
+  },
+  "ics_jp_conc_r7": {
+   "summary": {},
+   "query": "tag:ics country:JP org:\"<ISP-A>\" after:03/11/2026",
+   "case": "round3",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:22:47+0900",
+   "total": 642,
+   "facets": {},
+   "note": null
+  },
+  "ics_jp_excl": {
+   "summary": {},
+   "query": "tag:ics country:JP -org:\"<ISP-A>\" -org:\"<ISP-A2>\"",
+   "case": "round3",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:22:48+0900",
+   "total": 472,
+   "facets": {
+    "product": [
+     {
+      "count": 82,
+      "value": "Lantronix X9~"
+     },
+     {
+      "count": 37,
+      "value": "Mitsubishi Q PLC"
+     },
+     {
+      "count": 32,
+      "value": "HMS Networks"
+     },
+     {
+      "count": 9,
+      "value": "Lantronix"
+     },
+     {
+      "count": 9,
+      "value": "Lantronix X90"
+     },
+     {
+      "count": 6,
+      "value": "ConnectPort X4"
+     },
+     {
+      "count": 2,
+      "value": "3S-Smart Software Solutions"
+     },
+     {
+      "count": 2,
+      "value": "CJ2M-CPU32"
+     },
+     {
+      "count": 1,
+      "value": "CJ2M-CPU35"
+     },
+     {
+      "count": 1,
+      "value": "Lantronix X1$"
+     },
+     {
+      "count": 1,
+      "value": "Moxa Nport"
+     },
+     {
+      "count": 1,
+      "value": "Panasonic Industrial Devices SUNX Co., Ltd."
+     },
+     {
+      "count": 1,
+      "value": "TM251MESE"
+     }
+    ],
+    "port": [
+     {
+      "count": 155,
+      "value": 502
+     },
+     {
+      "count": 128,
+      "value": 102
+     },
+     {
+      "count": 101,
+      "value": 30718
+     },
+     {
+      "count": 33,
+      "value": 44818
+     },
+     {
+      "count": 19,
+      "value": 5007
+     },
+     {
+      "count": 18,
+      "value": 5006
+     },
+     {
+      "count": 6,
+      "value": 2362
+     },
+     {
+      "count": 3,
+      "value": 4840
+     },
+     {
+      "count": 3,
+      "value": 9600
+     },
+     {
+      "count": 2,
+      "value": 2455
+     },
+     {
+      "count": 2,
+      "value": 20547
+     },
+     {
+      "count": 1,
+      "value": 503
+     },
+     {
+      "count": 1,
+      "value": 4800
+     }
+    ]
+   },
+   "note": null
+  },
+  "ics_jp_excl_r16": {
+   "summary": {},
+   "query": "tag:ics country:JP -org:\"<ISP-A>\" -org:\"<ISP-A2>\" after:25/10/2026",
+   "case": "round3",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:22:50+0900",
+   "total": 352,
+   "facets": {},
+   "note": null
+  },
+  "conc_p102_all": {
+   "summary": {},
+   "query": "port:102 country:JP org:\"<ISP-A>\"",
+   "case": "round3",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:22:51+0900",
+   "total": 1044,
+   "facets": {
+    "product": [
+     {
+      "count": 1,
+      "value": "Hikvision IP Camera"
+     },
+     {
+      "count": 1,
+      "value": "nginx"
+     }
+    ],
+    "tag": [
+     {
+      "count": 1029,
+      "value": "ics"
+     },
+     {
+      "count": 1,
+      "value": "eol-product"
+     }
+    ]
+   },
+   "note": null
+  },
+  "melsec_jp_r16": {
+   "summary": {},
+   "query": "tag:ics country:JP port:5006,5007 after:25/10/2026",
+   "case": "round3",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:22:52+0900",
+   "total": 109,
+   "facets": {},
+   "note": null
+  },
+  "lantronix_jp": {
+   "summary": {},
+   "query": "tag:ics country:JP port:30718",
+   "case": "round3",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:22:54+0900",
+   "total": 1024,
+   "facets": {
+    "product": [
+     {
+      "count": 567,
+      "value": "Lantronix X9~"
+     },
+     {
+      "count": 379,
+      "value": "Lantronix X90"
+     },
+     {
+      "count": 77,
+      "value": "Lantronix"
+     },
+     {
+      "count": 1,
+      "value": "Lantronix X1$"
+     }
+    ],
+    "version": [
+     {
+      "count": 569,
+      "value": "7.0.0.3"
+     },
+     {
+      "count": 203,
+      "value": "6.10.0.3"
+     },
+     {
+      "count": 172,
+      "value": "6.10.0.1"
+     },
+     {
+      "count": 59,
+      "value": "8.1.0.0"
+     },
+     {
+      "count": 5,
+      "value": "6.11.0.11GC"
+     },
+     {
+      "count": 2,
+      "value": "6.7.0.1"
+     },
+     {
+      "count": 2,
+      "value": "6.9.0.2"
+     },
+     {
+      "count": 1,
+      "value": "6.7.0.0"
+     }
+    ]
+   },
+   "note": null
+  },
+  "hms_jp": {
+   "summary": {},
+   "query": "tag:ics country:JP product:\"HMS Networks\"",
+   "case": "round3",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:22:56+0900",
+   "total": 32,
+   "facets": {
+    "version": [
+     {
+      "count": 32,
+      "value": "Anybus Communicator CAN"
+     }
+    ]
+   },
+   "note": null
+  }
+ },
+ "finished_at": "2026-11-10T22:22:57+0900",
+ "sanitized": {
+  "tool": "sanitize_jp.py",
+  "removed": [
+   "asn",
+   "city",
+   "http.favicon.hash",
+   "isp",
+   "org",
+   "region",
+   "ssl.cert.fingerprint",
+   "ssl.cert.issuer.cn",
+   "ssl.cert.serial",
+   "ssl.cert.subject.cn"
+  ],
+  "count_only": [
+   "http.html_hash"
+  ],
+  "titles": "製品名・一般的な画面名以外は (other titles, redacted) にまとめた",
+  "isp_in_queries": "回線事業者名は <ISP-A> などに置き換えた"
+ }
+}

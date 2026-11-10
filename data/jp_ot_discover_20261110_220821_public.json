@@ -1,0 +1,240 @@
+{
+ "tool": "jp_ot_exposure",
+ "mode": "discover",
+ "started_at": "2026-11-10T22:08:21+0900",
+ "run_date": "2026-11-10",
+ "windows": {
+  "R16": "after:25/10/2026"
+ },
+ "results": {
+  "discover_ics_jp": {
+   "query": "tag:ics country:JP -tag:cloud -tag:honeypot",
+   "case": "-",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:08:21+0900",
+   "total": 2995,
+   "facets": {
+    "product": [
+     {
+      "count": 566,
+      "value": "Lantronix X9~"
+     },
+     {
+      "count": 379,
+      "value": "Lantronix X90"
+     },
+     {
+      "count": 135,
+      "value": "3S-Smart Software Solutions"
+     },
+     {
+      "count": 125,
+      "value": "Mitsubishi Q PLC"
+     },
+     {
+      "count": 77,
+      "value": "Lantronix"
+     },
+     {
+      "count": 32,
+      "value": "HMS Networks"
+     },
+     {
+      "count": 6,
+      "value": "ConnectPort X4"
+     },
+     {
+      "count": 4,
+      "value": "Omron Corporation"
+     },
+     {
+      "count": 3,
+      "value": "CP1H-XA40DR-A"
+     },
+     {
+      "count": 2,
+      "value": "CJ2M-CPU32"
+     },
+     {
+      "count": 2,
+      "value": "CODESYS V2.3.9.19"
+     },
+     {
+      "count": 2,
+      "value": "Moxa Nport"
+     },
+     {
+      "count": 1,
+      "value": "CJ2M-CPU35"
+     },
+     {
+      "count": 1,
+      "value": "CS1G_CPU45H"
+     },
+     {
+      "count": 1,
+      "value": "DSC_1616E"
+     },
+     {
+      "count": 1,
+      "value": "Keyence Corporation"
+     },
+     {
+      "count": 1,
+      "value": "Lantronix X1$"
+     },
+     {
+      "count": 1,
+      "value": "Niagara Fox"
+     },
+     {
+      "count": 1,
+      "value": "Panasonic Industrial Devices SUNX Co., Ltd."
+     },
+     {
+      "count": 1,
+      "value": "SIM"
+     },
+     {
+      "count": 1,
+      "value": "TM251MESE"
+     },
+     {
+      "count": 1,
+      "value": "UG65-L00J-915M-EA"
+     },
+     {
+      "count": 1,
+      "value": "UG67-L00J-915M"
+     }
+    ],
+    "tag": [
+     {
+      "count": 2995,
+      "value": "ics"
+     }
+    ],
+    "port": [
+     {
+      "count": 1194,
+      "value": 102
+     },
+     {
+      "count": 1023,
+      "value": 30718
+     },
+     {
+      "count": 429,
+      "value": 502
+     },
+     {
+      "count": 136,
+      "value": 2455
+     },
+     {
+      "count": 79,
+      "value": 5007
+     },
+     {
+      "count": 46,
+      "value": 5006
+     },
+     {
+      "count": 38,
+      "value": 44818
+     },
+     {
+      "count": 14,
+      "value": 4840
+     },
+     {
+      "count": 8,
+      "value": 20000
+     },
+     {
+      "count": 7,
+      "value": 9600
+     },
+     {
+      "count": 6,
+      "value": 2362
+     },
+     {
+      "count": 4,
+      "value": 503
+     },
+     {
+      "count": 4,
+      "value": 47808
+     },
+     {
+      "count": 2,
+      "value": 4800
+     },
+     {
+      "count": 2,
+      "value": 20547
+     },
+     {
+      "count": 1,
+      "value": 1200
+     },
+     {
+      "count": 1,
+      "value": 1911
+     },
+     {
+      "count": 1,
+      "value": 2404
+     }
+    ]
+   },
+   "note": null
+  },
+  "discover_ics_jp_hp": {
+   "query": "tag:ics tag:honeypot country:JP",
+   "case": "-",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:08:22+0900",
+   "total": 0,
+   "facets": {
+    "product": [],
+    "port": []
+   },
+   "note": null
+  },
+  "discover_ics_jp_cloud": {
+   "query": "tag:ics tag:cloud country:JP",
+   "case": "-",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:08:24+0900",
+   "total": 0,
+   "facets": {
+    "product": [],
+    "port": []
+   },
+   "note": null
+  }
+ },
+ "finished_at": "2026-11-10T22:08:25+0900",
+ "sanitized": {
+  "tool": "sanitize_jp.py",
+  "removed": [
+   "asn",
+   "city",
+   "http.favicon.hash",
+   "isp",
+   "org",
+   "region",
+   "ssl.cert.fingerprint",
+   "ssl.cert.issuer.cn",
+   "ssl.cert.serial",
+   "ssl.cert.subject.cn"
+  ],
+  "count_only": [
+   "http.html_hash"
+  ],
+  "titles": "製品名・一般的な画面名以外は (other titles, redacted) にまとめた",
+  "isp_in_queries": "回線事業者名は <ISP-A> などに置き換えた"
+ }
+}

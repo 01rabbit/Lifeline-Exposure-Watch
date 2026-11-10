@@ -1,0 +1,1564 @@
+{
+ "tool": "jp_ot_exposure",
+ "mode": "followup",
+ "started_at": "2026-11-10T22:15:59+0900",
+ "run_date": "2026-11-10",
+ "windows": {
+  "R16": "after:25/10/2026"
+ },
+ "results": {
+  "ics_jp_p102": {
+   "query": "tag:ics country:JP port:102",
+   "case": "followup",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:15:59+0900",
+   "total": 1194,
+   "facets": {
+    "product": []
+   },
+   "note": null
+  },
+  "ics_jp_p30718": {
+   "query": "tag:ics country:JP port:30718",
+   "case": "followup",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:16:02+0900",
+   "total": 1023,
+   "facets": {
+    "product": [
+     {
+      "count": 566,
+      "value": "Lantronix X9~"
+     },
+     {
+      "count": 379,
+      "value": "Lantronix X90"
+     },
+     {
+      "count": 77,
+      "value": "Lantronix"
+     },
+     {
+      "count": 1,
+      "value": "Lantronix X1$"
+     }
+    ]
+   },
+   "note": null
+  },
+  "ics_jp_p502": {
+   "query": "tag:ics country:JP port:502",
+   "case": "followup",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:16:03+0900",
+   "total": 429,
+   "facets": {
+    "product": [
+     {
+      "count": 1,
+      "value": "TM251MESE"
+     }
+    ]
+   },
+   "note": null
+  },
+  "ics_jp_p2455": {
+   "query": "tag:ics country:JP port:2455",
+   "case": "followup",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:16:05+0900",
+   "total": 136,
+   "facets": {
+    "product": [
+     {
+      "count": 135,
+      "value": "3S-Smart Software Solutions"
+     },
+     {
+      "count": 1,
+      "value": "CODESYS V2.3.9.19"
+     }
+    ]
+   },
+   "note": null
+  },
+  "ics_jp_melsec": {
+   "query": "tag:ics country:JP port:5006,5007",
+   "case": "followup",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:16:06+0900",
+   "total": 125,
+   "facets": {
+    "product": [
+     {
+      "count": 125,
+      "value": "Mitsubishi Q PLC"
+     }
+    ]
+   },
+   "note": null
+  },
+  "ics_jp_omron": {
+   "query": "tag:ics country:JP port:9600",
+   "case": "followup",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:16:08+0900",
+   "total": 7,
+   "facets": {
+    "product": [
+     {
+      "count": 3,
+      "value": "CP1H-XA40DR-A"
+     },
+     {
+      "count": 2,
+      "value": "CJ2M-CPU32"
+     },
+     {
+      "count": 1,
+      "value": "CJ2M-CPU35"
+     },
+     {
+      "count": 1,
+      "value": "CS1G_CPU45H"
+     }
+    ]
+   },
+   "note": null
+  },
+  "ics_jp_enip": {
+   "query": "tag:ics country:JP port:44818",
+   "case": "followup",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:16:09+0900",
+   "total": 38,
+   "facets": {
+    "product": [
+     {
+      "count": 32,
+      "value": "HMS Networks"
+     },
+     {
+      "count": 4,
+      "value": "Omron Corporation"
+     },
+     {
+      "count": 1,
+      "value": "Keyence Corporation"
+     },
+     {
+      "count": 1,
+      "value": "Panasonic Industrial Devices SUNX Co., Ltd."
+     }
+    ]
+   },
+   "note": null
+  },
+  "ics_jp_dnp3": {
+   "query": "tag:ics country:JP port:20000",
+   "case": "followup",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:16:11+0900",
+   "total": 8,
+   "facets": {
+    "product": []
+   },
+   "note": null
+  },
+  "ics_world_port": {
+   "query": "tag:ics -tag:cloud -tag:honeypot",
+   "case": "followup",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:16:12+0900",
+   "total": 83961,
+   "facets": {
+    "product": [
+     {
+      "count": 4259,
+      "value": "Niagara Fox"
+     },
+     {
+      "count": 2510,
+      "value": "Niagara4 Station"
+     },
+     {
+      "count": 2420,
+      "value": "Moxa Nport"
+     },
+     {
+      "count": 1942,
+      "value": "Rockwell Automation/Allen-Bradley"
+     },
+     {
+      "count": 1766,
+      "value": "3S-Smart Software Solutions"
+     },
+     {
+      "count": 1402,
+      "value": "Lantronix"
+     },
+     {
+      "count": 1379,
+      "value": "Lantronix X90"
+     },
+     {
+      "count": 1126,
+      "value": "SeCo"
+     },
+     {
+      "count": 729,
+      "value": "Lantronix X9~"
+     },
+     {
+      "count": 500,
+      "value": "BMX P34 2020"
+     },
+     {
+      "count": 478,
+      "value": "HikCentral Professional"
+     },
+     {
+      "count": 457,
+      "value": "MACH-ProWebSys"
+     },
+     {
+      "count": 454,
+      "value": "MACH-ProWebCom"
+     },
+     {
+      "count": 439,
+      "value": "Red Lion Controls"
+     },
+     {
+      "count": 411,
+      "value": "Windows CE Remote Display"
+     },
+     {
+      "count": 370,
+      "value": "eBMGR"
+     },
+     {
+      "count": 300,
+      "value": "Tracer SC+"
+     },
+     {
+      "count": 266,
+      "value": "POS3.67"
+     },
+     {
+      "count": 244,
+      "value": "NiagaraAX Station"
+     },
+     {
+      "count": 214,
+      "value": "CJ2M-CPU31"
+     },
+     {
+      "count": 198,
+      "value": "CJ2M-CPU33"
+     },
+     {
+      "count": 195,
+      "value": "AS-P"
+     },
+     {
+      "count": 185,
+      "value": "A8810-0"
+     },
+     {
+      "count": 183,
+      "value": "LGR25"
+     },
+     {
+      "count": 181,
+      "value": "TM221CE40T"
+     },
+     {
+      "count": 179,
+      "value": "Mitsubishi Q PLC"
+     },
+     {
+      "count": 170,
+      "value": "AAM-Router"
+     },
+     {
+      "count": 170,
+      "value": "TM221CE16T"
+     },
+     {
+      "count": 170,
+      "value": "TM221CE40R"
+     },
+     {
+      "count": 166,
+      "value": "SolarCity X2e"
+     }
+    ],
+    "port": [
+     {
+      "count": 28559,
+      "value": 502
+     },
+     {
+      "count": 12150,
+      "value": 47808
+     },
+     {
+      "count": 10769,
+      "value": 3671
+     },
+     {
+      "count": 5278,
+      "value": 102
+     },
+     {
+      "count": 3985,
+      "value": 30718
+     },
+     {
+      "count": 3853,
+      "value": 1911
+     },
+     {
+      "count": 2420,
+      "value": 4800
+     },
+     {
+      "count": 2366,
+      "value": 44818
+     },
+     {
+      "count": 2029,
+      "value": 503
+     },
+     {
+      "count": 1892,
+      "value": 2404
+     },
+     {
+      "count": 1692,
+      "value": 2455
+     },
+     {
+      "count": 1683,
+      "value": 10001
+     },
+     {
+      "count": 1546,
+      "value": 2362
+     },
+     {
+      "count": 880,
+      "value": 9600
+     },
+     {
+      "count": 634,
+      "value": 20000
+     },
+     {
+      "count": 532,
+      "value": 1962
+     },
+     {
+      "count": 519,
+      "value": 4840
+     },
+     {
+      "count": 439,
+      "value": 789
+     },
+     {
+      "count": 411,
+      "value": 987
+     },
+     {
+      "count": 406,
+      "value": 4911
+     },
+     {
+      "count": 400,
+      "value": 1200
+     },
+     {
+      "count": 325,
+      "value": 20547
+     },
+     {
+      "count": 296,
+      "value": 20256
+     },
+     {
+      "count": 149,
+      "value": 2222
+     },
+     {
+      "count": 119,
+      "value": 4070
+     },
+     {
+      "count": 114,
+      "value": 5007
+     },
+     {
+      "count": 72,
+      "value": 1025
+     },
+     {
+      "count": 65,
+      "value": 5006
+     },
+     {
+      "count": 44,
+      "value": 18245
+     },
+     {
+      "count": 26,
+      "value": 1024
+     }
+    ]
+   },
+   "note": null
+  },
+  "ics_us_port": {
+   "query": "tag:ics country:US -tag:cloud -tag:honeypot",
+   "case": "followup",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:16:14+0900",
+   "total": 19239,
+   "facets": {
+    "port": [
+     {
+      "count": 6949,
+      "value": 47808
+     },
+     {
+      "count": 4006,
+      "value": 502
+     },
+     {
+      "count": 2408,
+      "value": 1911
+     },
+     {
+      "count": 1379,
+      "value": 30718
+     },
+     {
+      "count": 1149,
+      "value": 44818
+     },
+     {
+      "count": 1013,
+      "value": 10001
+     },
+     {
+      "count": 304,
+      "value": 102
+     },
+     {
+      "count": 272,
+      "value": 2362
+     },
+     {
+      "count": 257,
+      "value": 503
+     },
+     {
+      "count": 252,
+      "value": 20000
+     },
+     {
+      "count": 208,
+      "value": 789
+     },
+     {
+      "count": 205,
+      "value": 4911
+     },
+     {
+      "count": 160,
+      "value": 4800
+     },
+     {
+      "count": 97,
+      "value": 2455
+     },
+     {
+      "count": 94,
+      "value": 4840
+     },
+     {
+      "count": 93,
+      "value": 4070
+     },
+     {
+      "count": 77,
+      "value": 1200
+     },
+     {
+      "count": 71,
+      "value": 2222
+     },
+     {
+      "count": 70,
+      "value": 2404
+     },
+     {
+      "count": 36,
+      "value": 1025
+     }
+    ]
+   },
+   "note": null
+  },
+  "ics_de_port": {
+   "query": "tag:ics country:DE -tag:cloud -tag:honeypot",
+   "case": "followup",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:16:15+0900",
+   "total": 3081,
+   "facets": {
+    "port": [
+     {
+      "count": 1163,
+      "value": 502
+     },
+     {
+      "count": 1068,
+      "value": 3671
+     },
+     {
+      "count": 186,
+      "value": 102
+     },
+     {
+      "count": 120,
+      "value": 2362
+     },
+     {
+      "count": 68,
+      "value": 1962
+     },
+     {
+      "count": 55,
+      "value": 47808
+     },
+     {
+      "count": 50,
+      "value": 2455
+     },
+     {
+      "count": 50,
+      "value": 10001
+     },
+     {
+      "count": 44,
+      "value": 4840
+     },
+     {
+      "count": 33,
+      "value": 4800
+     },
+     {
+      "count": 28,
+      "value": 1200
+     },
+     {
+      "count": 27,
+      "value": 503
+     },
+     {
+      "count": 27,
+      "value": 987
+     },
+     {
+      "count": 25,
+      "value": 1911
+     },
+     {
+      "count": 24,
+      "value": 20000
+     },
+     {
+      "count": 23,
+      "value": 44818
+     },
+     {
+      "count": 18,
+      "value": 2404
+     },
+     {
+      "count": 17,
+      "value": 9600
+     },
+     {
+      "count": 17,
+      "value": 30718
+     },
+     {
+      "count": 6,
+      "value": 4911
+     }
+    ]
+   },
+   "note": null
+  },
+  "ics_kr_port": {
+   "query": "tag:ics country:KR -tag:cloud -tag:honeypot",
+   "case": "followup",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:16:17+0900",
+   "total": 4269,
+   "facets": {
+    "port": [
+     {
+      "count": 3812,
+      "value": 502
+     },
+     {
+      "count": 109,
+      "value": 30718
+     },
+     {
+      "count": 96,
+      "value": 44818
+     },
+     {
+      "count": 48,
+      "value": 47808
+     },
+     {
+      "count": 42,
+      "value": 503
+     },
+     {
+      "count": 42,
+      "value": 4800
+     },
+     {
+      "count": 29,
+      "value": 4840
+     },
+     {
+      "count": 24,
+      "value": 2455
+     },
+     {
+      "count": 17,
+      "value": 2222
+     },
+     {
+      "count": 13,
+      "value": 3671
+     },
+     {
+      "count": 9,
+      "value": 102
+     },
+     {
+      "count": 6,
+      "value": 5007
+     },
+     {
+      "count": 4,
+      "value": 987
+     },
+     {
+      "count": 4,
+      "value": 1911
+     },
+     {
+      "count": 4,
+      "value": 2404
+     },
+     {
+      "count": 2,
+      "value": 1200
+     },
+     {
+      "count": 2,
+      "value": 2362
+     },
+     {
+      "count": 2,
+      "value": 18245
+     },
+     {
+      "count": 1,
+      "value": 1025
+     },
+     {
+      "count": 1,
+      "value": 5006
+     }
+    ]
+   },
+   "note": null
+  },
+  "bacnet_jp_inst": {
+   "query": "port:47808 country:JP \"Instance ID\"",
+   "case": "followup",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:16:18+0900",
+   "total": 4,
+   "facets": {
+    "product": [
+     {
+      "count": 1,
+      "value": "DSC_1616E"
+     },
+     {
+      "count": 1,
+      "value": "SIM"
+     },
+     {
+      "count": 1,
+      "value": "UG65-L00J-915M-EA"
+     },
+     {
+      "count": 1,
+      "value": "UG67-L00J-915M"
+     }
+    ]
+   },
+   "note": null
+  },
+  "bacnet_jp_vendor": {
+   "query": "port:47808 country:JP \"Vendor\"",
+   "case": "followup",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:16:20+0900",
+   "total": 4,
+   "facets": {},
+   "note": null
+  },
+  "bacnet_world_inst": {
+   "query": "port:47808 \"Instance ID\"",
+   "case": "followup",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:16:21+0900",
+   "total": 11846,
+   "facets": {
+    "country": [
+     {
+      "count": 6738,
+      "value": "US"
+     },
+     {
+      "count": 1901,
+      "value": "CA"
+     },
+     {
+      "count": 352,
+      "value": "FR"
+     },
+     {
+      "count": 280,
+      "value": "SE"
+     },
+     {
+      "count": 274,
+      "value": "IT"
+     },
+     {
+      "count": 235,
+      "value": "ES"
+     },
+     {
+      "count": 212,
+      "value": "NO"
+     },
+     {
+      "count": 149,
+      "value": "GB"
+     },
+     {
+      "count": 98,
+      "value": "AU"
+     },
+     {
+      "count": 82,
+      "value": "TR"
+     },
+     {
+      "count": 80,
+      "value": "BR"
+     },
+     {
+      "count": 71,
+      "value": "IN"
+     },
+     {
+      "count": 68,
+      "value": "DK"
+     },
+     {
+      "count": 55,
+      "value": "DE"
+     },
+     {
+      "count": 52,
+      "value": "HK"
+     },
+     {
+      "count": 51,
+      "value": "MX"
+     },
+     {
+      "count": 47,
+      "value": "FI"
+     },
+     {
+      "count": 46,
+      "value": "CO"
+     },
+     {
+      "count": 46,
+      "value": "CZ"
+     },
+     {
+      "count": 46,
+      "value": "TH"
+     }
+    ]
+   },
+   "note": null
+  },
+  "xweb_jp_ports": {
+   "query": "http.title:\"XWEB\" country:JP",
+   "case": "followup",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:16:22+0900",
+   "total": 165,
+   "facets": {
+    "port": [
+     {
+      "count": 2,
+      "value": 443
+     },
+     {
+      "count": 1,
+      "value": 21
+     },
+     {
+      "count": 1,
+      "value": 23
+     },
+     {
+      "count": 1,
+      "value": 104
+     },
+     {
+      "count": 1,
+      "value": 452
+     },
+     {
+      "count": 1,
+      "value": 554
+     },
+     {
+      "count": 1,
+      "value": 636
+     },
+     {
+      "count": 1,
+      "value": 675
+     },
+     {
+      "count": 1,
+      "value": 771
+     },
+     {
+      "count": 1,
+      "value": 995
+     },
+     {
+      "count": 1,
+      "value": 1200
+     },
+     {
+      "count": 1,
+      "value": 1311
+     },
+     {
+      "count": 1,
+      "value": 1720
+     },
+     {
+      "count": 1,
+      "value": 1951
+     },
+     {
+      "count": 1,
+      "value": 2008
+     },
+     {
+      "count": 1,
+      "value": 2062
+     },
+     {
+      "count": 1,
+      "value": 2209
+     },
+     {
+      "count": 1,
+      "value": 2221
+     },
+     {
+      "count": 1,
+      "value": 2248
+     },
+     {
+      "count": 1,
+      "value": 2362
+     },
+     {
+      "count": 1,
+      "value": 2386
+     },
+     {
+      "count": 1,
+      "value": 2506
+     },
+     {
+      "count": 1,
+      "value": 2557
+     },
+     {
+      "count": 1,
+      "value": 2601
+     },
+     {
+      "count": 1,
+      "value": 2626
+     },
+     {
+      "count": 1,
+      "value": 3001
+     },
+     {
+      "count": 1,
+      "value": 3056
+     },
+     {
+      "count": 1,
+      "value": 3138
+     },
+     {
+      "count": 1,
+      "value": 3152
+     },
+     {
+      "count": 1,
+      "value": 3169
+     },
+     {
+      "count": 1,
+      "value": 3561
+     },
+     {
+      "count": 1,
+      "value": 3572
+     },
+     {
+      "count": 1,
+      "value": 3689
+     },
+     {
+      "count": 1,
+      "value": 4117
+     },
+     {
+      "count": 1,
+      "value": 4250
+     },
+     {
+      "count": 1,
+      "value": 4455
+     },
+     {
+      "count": 1,
+      "value": 4567
+     },
+     {
+      "count": 1,
+      "value": 4786
+     },
+     {
+      "count": 1,
+      "value": 5135
+     },
+     {
+      "count": 1,
+      "value": 5235
+     },
+     {
+      "count": 1,
+      "value": 5567
+     },
+     {
+      "count": 1,
+      "value": 5914
+     },
+     {
+      "count": 1,
+      "value": 5985
+     },
+     {
+      "count": 1,
+      "value": 5992
+     },
+     {
+      "count": 1,
+      "value": 6080
+     },
+     {
+      "count": 1,
+      "value": 6405
+     },
+     {
+      "count": 1,
+      "value": 6662
+     },
+     {
+      "count": 1,
+      "value": 7001
+     },
+     {
+      "count": 1,
+      "value": 7004
+     },
+     {
+      "count": 1,
+      "value": 7100
+     },
+     {
+      "count": 1,
+      "value": 7184
+     },
+     {
+      "count": 1,
+      "value": 7535
+     },
+     {
+      "count": 1,
+      "value": 7548
+     },
+     {
+      "count": 1,
+      "value": 8020
+     },
+     {
+      "count": 1,
+      "value": 8055
+     },
+     {
+      "count": 1,
+      "value": 8069
+     },
+     {
+      "count": 1,
+      "value": 8096
+     },
+     {
+      "count": 1,
+      "value": 8111
+     },
+     {
+      "count": 1,
+      "value": 8115
+     },
+     {
+      "count": 1,
+      "value": 8117
+     },
+     {
+      "count": 1,
+      "value": 8155
+     },
+     {
+      "count": 1,
+      "value": 8158
+     },
+     {
+      "count": 1,
+      "value": 8180
+     },
+     {
+      "count": 1,
+      "value": 8198
+     },
+     {
+      "count": 1,
+      "value": 8285
+     },
+     {
+      "count": 1,
+      "value": 8319
+     },
+     {
+      "count": 1,
+      "value": 8407
+     },
+     {
+      "count": 1,
+      "value": 8422
+     },
+     {
+      "count": 1,
+      "value": 8450
+     },
+     {
+      "count": 1,
+      "value": 8493
+     },
+     {
+      "count": 1,
+      "value": 8506
+     },
+     {
+      "count": 1,
+      "value": 8550
+     },
+     {
+      "count": 1,
+      "value": 8576
+     },
+     {
+      "count": 1,
+      "value": 8708
+     },
+     {
+      "count": 1,
+      "value": 8728
+     },
+     {
+      "count": 1,
+      "value": 8810
+     },
+     {
+      "count": 1,
+      "value": 8829
+     },
+     {
+      "count": 1,
+      "value": 8886
+     },
+     {
+      "count": 1,
+      "value": 9008
+     },
+     {
+      "count": 1,
+      "value": 9018
+     },
+     {
+      "count": 1,
+      "value": 9044
+     },
+     {
+      "count": 1,
+      "value": 9085
+     },
+     {
+      "count": 1,
+      "value": 9145
+     },
+     {
+      "count": 1,
+      "value": 9168
+     },
+     {
+      "count": 1,
+      "value": 9304
+     },
+     {
+      "count": 1,
+      "value": 9387
+     },
+     {
+      "count": 1,
+      "value": 9398
+     },
+     {
+      "count": 1,
+      "value": 9527
+     },
+     {
+      "count": 1,
+      "value": 9674
+     },
+     {
+      "count": 1,
+      "value": 9797
+     },
+     {
+      "count": 1,
+      "value": 9971
+     },
+     {
+      "count": 1,
+      "value": 9977
+     },
+     {
+      "count": 1,
+      "value": 10010
+     },
+     {
+      "count": 1,
+      "value": 10045
+     },
+     {
+      "count": 1,
+      "value": 10047
+     },
+     {
+      "count": 1,
+      "value": 11964
+     },
+     {
+      "count": 1,
+      "value": 12107
+     },
+     {
+      "count": 1,
+      "value": 12113
+     },
+     {
+      "count": 1,
+      "value": 12124
+     },
+     {
+      "count": 1,
+      "value": 12150
+     }
+    ]
+   },
+   "note": null
+  },
+  "xweb_jp_since0111": {
+   "query": "http.title:\"XWEB\" country:JP after:01/11/2026",
+   "case": "followup",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:16:24+0900",
+   "total": 165,
+   "facets": {},
+   "note": null
+  },
+  "xweb_jp_since0104": {
+   "query": "http.title:\"XWEB\" country:JP after:04/11/2026",
+   "case": "followup",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:16:26+0900",
+   "total": 165,
+   "facets": {},
+   "note": null
+  },
+  "xweb_jp_ssl": {
+   "query": "http.title:\"XWEB\" country:JP ssl:true",
+   "case": "followup",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:16:28+0900",
+   "total": 2,
+   "facets": {},
+   "note": null
+  },
+  "solarview_any": {
+   "query": "\"SolarView\"",
+   "case": "followup",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:16:29+0900",
+   "total": 460,
+   "facets": {
+    "country": [
+     {
+      "count": 455,
+      "value": "JP"
+     },
+     {
+      "count": 1,
+      "value": "CH"
+     },
+     {
+      "count": 1,
+      "value": "FI"
+     },
+     {
+      "count": 1,
+      "value": "HK"
+     },
+     {
+      "count": 1,
+      "value": "NL"
+     },
+     {
+      "count": 1,
+      "value": "SE"
+     }
+    ],
+    "port": [
+     {
+      "count": 267,
+      "value": 80
+     },
+     {
+      "count": 64,
+      "value": 8010
+     },
+     {
+      "count": 11,
+      "value": 21
+     },
+     {
+      "count": 9,
+      "value": 10101
+     },
+     {
+      "count": 8,
+      "value": 81
+     },
+     {
+      "count": 7,
+      "value": 5002
+     },
+     {
+      "count": 7,
+      "value": 8000
+     },
+     {
+      "count": 6,
+      "value": 10106
+     },
+     {
+      "count": 5,
+      "value": 82
+     },
+     {
+      "count": 5,
+      "value": 83
+     }
+    ],
+    "http.title": [
+     {
+      "value": "Error 401",
+      "count": 428
+     },
+     {
+      "value": "401 Authorization Required",
+      "count": 11
+     },
+     {
+      "value": "301 Moved Permanently",
+      "count": 3
+     }
+    ]
+   },
+   "note": null
+  },
+  "solarview_jp": {
+   "query": "\"SolarView\" country:JP",
+   "case": "followup",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:16:31+0900",
+   "total": 455,
+   "facets": {
+    "port": [
+     {
+      "count": 264,
+      "value": 80
+     },
+     {
+      "count": 64,
+      "value": 8010
+     },
+     {
+      "count": 11,
+      "value": 21
+     },
+     {
+      "count": 9,
+      "value": 10101
+     },
+     {
+      "count": 8,
+      "value": 81
+     },
+     {
+      "count": 7,
+      "value": 5002
+     },
+     {
+      "count": 7,
+      "value": 8000
+     },
+     {
+      "count": 6,
+      "value": 10106
+     },
+     {
+      "count": 5,
+      "value": 82
+     },
+     {
+      "count": 5,
+      "value": 83
+     }
+    ],
+    "http.title": [
+     {
+      "value": "Error 401",
+      "count": 428
+     },
+     {
+      "value": "401 Authorization Required",
+      "count": 11
+     }
+    ]
+   },
+   "note": null
+  },
+  "solarview_html_jp": {
+   "query": "http.html:\"SolarView\" country:JP",
+   "case": "followup",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:16:33+0900",
+   "total": 1057,
+   "facets": {
+    "port": [
+     {
+      "count": 771,
+      "value": 80
+     },
+     {
+      "count": 65,
+      "value": 8010
+     },
+     {
+      "count": 20,
+      "value": 443
+     },
+     {
+      "count": 18,
+      "value": 81
+     },
+     {
+      "count": 13,
+      "value": 10101
+     },
+     {
+      "count": 10,
+      "value": 8000
+     },
+     {
+      "count": 9,
+      "value": 82
+     },
+     {
+      "count": 9,
+      "value": 8001
+     },
+     {
+      "count": 9,
+      "value": 50000
+     },
+     {
+      "count": 8,
+      "value": 5002
+     }
+    ],
+    "http.title": [
+     {
+      "value": "Top",
+      "count": 611
+     },
+     {
+      "value": "Error 401",
+      "count": 428
+     },
+     {
+      "value": "SolarView Air ASP : SolarView Air Cloud Service",
+      "count": 16
+     },
+     {
+      "value": "(other titles, redacted)",
+      "count": 2
+     }
+    ]
+   },
+   "note": null
+  },
+  "vnc_noauth_jp_label": {
+   "query": "\"authentication disabled\" \"RFB\" country:JP",
+   "case": "followup",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:16:35+0900",
+   "total": 45,
+   "facets": {
+    "screenshot.label": [
+     {
+      "count": 11,
+      "value": "blank"
+     },
+     {
+      "count": 8,
+      "value": "loggedin"
+     },
+     {
+      "count": 8,
+      "value": "terminal"
+     },
+     {
+      "count": 7,
+      "value": "login"
+     },
+     {
+      "count": 6,
+      "value": "desktop"
+     },
+     {
+      "count": 5,
+      "value": "ics"
+     },
+     {
+      "count": 5,
+      "value": "pos"
+     },
+     {
+      "count": 3,
+      "value": "windows"
+     },
+     {
+      "count": 2,
+      "value": "webcam"
+     },
+     {
+      "count": 1,
+      "value": "screensaver"
+     }
+    ]
+   },
+   "note": null
+  }
+ },
+ "finished_at": "2026-11-10T22:16:36+0900",
+ "sanitized": {
+  "tool": "sanitize_jp.py",
+  "removed": [
+   "asn",
+   "city",
+   "http.favicon.hash",
+   "isp",
+   "org",
+   "region",
+   "ssl.cert.fingerprint",
+   "ssl.cert.issuer.cn",
+   "ssl.cert.serial",
+   "ssl.cert.subject.cn"
+  ],
+  "count_only": [
+   "http.html_hash"
+  ],
+  "titles": "製品名・一般的な画面名以外は (other titles, redacted) にまとめた",
+  "isp_in_queries": "回線事業者名は <ISP-A> などに置き換えた"
+ }
+}

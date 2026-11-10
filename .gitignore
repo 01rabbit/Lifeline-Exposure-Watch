@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.DS_Store
+# 加工前の計測結果（回線事業者名を含む）はコミットしない
+jp_ot_*.json
+!data/*_public.json
+pv_discover_*.json

@@ -1,0 +1,4862 @@
+{
+ "tool": "jp_ot_exposure",
+ "mode": "measure",
+ "started_at": "2026-11-10T22:09:05+0900",
+ "run_date": "2026-11-10",
+ "windows": {
+  "R16": "after:25/10/2026"
+ },
+ "results": {
+  "ics_all_world": {
+   "query": "tag:ics -tag:cloud -tag:honeypot",
+   "case": "全体",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:09:05+0900",
+   "total": 83943,
+   "facets": {
+    "country": [
+     {
+      "count": 19236,
+      "value": "US"
+     },
+     {
+      "count": 5335,
+      "value": "ES"
+     },
+     {
+      "count": 5273,
+      "value": "IT"
+     },
+     {
+      "count": 4883,
+      "value": "TR"
+     },
+     {
+      "count": 4269,
+      "value": "KR"
+     },
+     {
+      "count": 3942,
+      "value": "CA"
+     },
+     {
+      "count": 3080,
+      "value": "DE"
+     },
+     {
+      "count": 2995,
+      "value": "JP"
+     },
+     {
+      "count": 2945,
+      "value": "FR"
+     },
+     {
+      "count": 2844,
+      "value": "SE"
+     },
+     {
+      "count": 2323,
+      "value": "CN"
+     },
+     {
+      "count": 1736,
+      "value": "LT"
+     },
+     {
+      "count": 1648,
+      "value": "TW"
+     },
+     {
+      "count": 1514,
+      "value": "PL"
+     },
+     {
+      "count": 1439,
+      "value": "RU"
+     },
+     {
+      "count": 1295,
+      "value": "BE"
+     },
+     {
+      "count": 1253,
+      "value": "NL"
+     },
+     {
+      "count": 1232,
+      "value": "AT"
+     },
+     {
+      "count": 1009,
+      "value": "VN"
+     },
+     {
+      "count": 1000,
+      "value": "RO"
+     },
+     {
+      "count": 948,
+      "value": "GB"
+     },
+     {
+      "count": 868,
+      "value": "CZ"
+     },
+     {
+      "count": 785,
+      "value": "CH"
+     },
+     {
+      "count": 680,
+      "value": "HU"
+     },
+     {
+      "count": 674,
+      "value": "GR"
+     },
+     {
+      "count": 601,
+      "value": "AU"
+     },
+     {
+      "count": 576,
+      "value": "BR"
+     },
+     {
+      "count": 535,
+      "value": "DK"
+     },
+     {
+      "count": 520,
+      "value": "PT"
+     },
+     {
+      "count": 492,
+      "value": "NO"
+     },
+     {
+      "count": 463,
+      "value": "FI"
+     },
+     {
+      "count": 455,
+      "value": "BY"
+     },
+     {
+      "count": 445,
+      "value": "IN"
+     },
+     {
+      "count": 411,
+      "value": "SK"
+     },
+     {
+      "count": 383,
+      "value": "SI"
+     },
+     {
+      "count": 379,
+      "value": "TH"
+     },
+     {
+      "count": 363,
+      "value": "UA"
+     },
+     {
+      "count": 325,
+      "value": "EE"
+     },
+     {
+      "count": 308,
+      "value": "IL"
+     },
+     {
+      "count": 274,
+      "value": "CL"
+     },
+     {
+      "count": 249,
+      "value": "LV"
+     },
+     {
+      "count": 239,
+      "value": "HR"
+     },
+     {
+      "count": 181,
+      "value": "MA"
+     },
+     {
+      "count": 178,
+      "value": "HK"
+     },
+     {
+      "count": 176,
+      "value": "MX"
+     },
+     {
+      "count": 168,
+      "value": "BG"
+     },
+     {
+      "count": 166,
+      "value": "CY"
+     },
+     {
+      "count": 162,
+      "value": "PR"
+     },
+     {
+      "count": 156,
+      "value": "NZ"
+     },
+     {
+      "count": 132,
+      "value": "JO"
+     }
+    ]
+   },
+   "note": null,
+   "jp_count": 2995,
+   "jp_rank": 8
+  },
+  "ics_all_jp": {
+   "query": "tag:ics -tag:cloud -tag:honeypot country:JP",
+   "case": "全体",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:09:08+0900",
+   "total": 2995,
+   "facets": {
+    "product": [
+     {
+      "count": 566,
+      "value": "Lantronix X9~"
+     },
+     {
+      "count": 379,
+      "value": "Lantronix X90"
+     },
+     {
+      "count": 135,
+      "value": "3S-Smart Software Solutions"
+     },
+     {
+      "count": 125,
+      "value": "Mitsubishi Q PLC"
+     },
+     {
+      "count": 77,
+      "value": "Lantronix"
+     },
+     {
+      "count": 32,
+      "value": "HMS Networks"
+     },
+     {
+      "count": 6,
+      "value": "ConnectPort X4"
+     },
+     {
+      "count": 4,
+      "value": "Omron Corporation"
+     },
+     {
+      "count": 3,
+      "value": "CP1H-XA40DR-A"
+     },
+     {
+      "count": 2,
+      "value": "CJ2M-CPU32"
+     },
+     {
+      "count": 2,
+      "value": "CODESYS V2.3.9.19"
+     },
+     {
+      "count": 2,
+      "value": "Moxa Nport"
+     },
+     {
+      "count": 1,
+      "value": "CJ2M-CPU35"
+     },
+     {
+      "count": 1,
+      "value": "CS1G_CPU45H"
+     },
+     {
+      "count": 1,
+      "value": "DSC_1616E"
+     }
+    ],
+    "tag": [
+     {
+      "count": 2995,
+      "value": "ics"
+     }
+    ],
+    "port": [
+     {
+      "count": 1194,
+      "value": 102
+     },
+     {
+      "count": 1023,
+      "value": 30718
+     },
+     {
+      "count": 429,
+      "value": 502
+     },
+     {
+      "count": 136,
+      "value": 2455
+     },
+     {
+      "count": 79,
+      "value": 5007
+     },
+     {
+      "count": 46,
+      "value": 5006
+     },
+     {
+      "count": 38,
+      "value": 44818
+     },
+     {
+      "count": 14,
+      "value": 4840
+     },
+     {
+      "count": 8,
+      "value": 20000
+     },
+     {
+      "count": 7,
+      "value": 9600
+     },
+     {
+      "count": 6,
+      "value": 2362
+     },
+     {
+      "count": 4,
+      "value": 503
+     },
+     {
+      "count": 4,
+      "value": 47808
+     },
+     {
+      "count": 2,
+      "value": 4800
+     },
+     {
+      "count": 2,
+      "value": 20547
+     }
+    ],
+    "http.title": []
+   },
+   "note": null
+  },
+  "ics_all_jp_r16": {
+   "query": "tag:ics -tag:cloud -tag:honeypot country:JP after:25/10/2026",
+   "case": "全体",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:09:10+0900",
+   "total": 2623,
+   "facets": {},
+   "note": null
+  },
+  "modbus_world": {
+   "query": "port:502 -tag:cloud -tag:honeypot",
+   "case": "FrostyGoop(B3)・Dragos報告",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:09:11+0900",
+   "total": 351917,
+   "facets": {
+    "country": [
+     {
+      "count": 127096,
+      "value": "CN"
+     },
+     {
+      "count": 64578,
+      "value": "US"
+     },
+     {
+      "count": 36511,
+      "value": "SG"
+     },
+     {
+      "count": 24733,
+      "value": "GB"
+     },
+     {
+      "count": 23248,
+      "value": "IL"
+     },
+     {
+      "count": 8546,
+      "value": "CA"
+     },
+     {
+      "count": 7462,
+      "value": "DE"
+     },
+     {
+      "count": 5107,
+      "value": "KR"
+     },
+     {
+      "count": 4180,
+      "value": "JP"
+     },
+     {
+      "count": 4134,
+      "value": "NL"
+     },
+     {
+      "count": 3929,
+      "value": "FR"
+     },
+     {
+      "count": 3855,
+      "value": "TR"
+     },
+     {
+      "count": 3315,
+      "value": "SE"
+     },
+     {
+      "count": 3084,
+      "value": "AU"
+     },
+     {
+      "count": 2923,
+      "value": "ES"
+     },
+     {
+      "count": 2676,
+      "value": "IT"
+     },
+     {
+      "count": 1749,
+      "value": "CH"
+     },
+     {
+      "count": 1599,
+      "value": "DK"
+     },
+     {
+      "count": 1592,
+      "value": "BR"
+     },
+     {
+      "count": 1556,
+      "value": "PL"
+     },
+     {
+      "count": 1437,
+      "value": "LT"
+     },
+     {
+      "count": 1351,
+      "value": "HK"
+     },
+     {
+      "count": 1320,
+      "value": "TW"
+     },
+     {
+      "count": 1175,
+      "value": "BE"
+     },
+     {
+      "count": 1156,
+      "value": "ID"
+     },
+     {
+      "count": 983,
+      "value": "VN"
+     },
+     {
+      "count": 832,
+      "value": "RO"
+     },
+     {
+      "count": 826,
+      "value": "CZ"
+     },
+     {
+      "count": 615,
+      "value": "TH"
+     },
+     {
+      "count": 559,
+      "value": "IN"
+     },
+     {
+      "count": 504,
+      "value": "AE"
+     },
+     {
+      "count": 481,
+      "value": "MY"
+     },
+     {
+      "count": 469,
+      "value": "IR"
+     },
+     {
+      "count": 442,
+      "value": "MX"
+     },
+     {
+      "count": 431,
+      "value": "FI"
+     },
+     {
+      "count": 345,
+      "value": "CL"
+     },
+     {
+      "count": 315,
+      "value": "AT"
+     },
+     {
+      "count": 313,
+      "value": "MA"
+     },
+     {
+      "count": 288,
+      "value": "PT"
+     },
+     {
+      "count": 285,
+      "value": "GR"
+     },
+     {
+      "count": 275,
+      "value": "UA"
+     },
+     {
+      "count": 268,
+      "value": "HU"
+     },
+     {
+      "count": 258,
+      "value": "BY"
+     },
+     {
+      "count": 238,
+      "value": "AR"
+     },
+     {
+      "count": 221,
+      "value": "LV"
+     },
+     {
+      "count": 211,
+      "value": "BG"
+     },
+     {
+      "count": 201,
+      "value": "RU"
+     },
+     {
+      "count": 196,
+      "value": "SA"
+     },
+     {
+      "count": 179,
+      "value": "SK"
+     },
+     {
+      "count": 155,
+      "value": "ZA"
+     }
+    ]
+   },
+   "note": null,
+   "jp_count": 4180,
+   "jp_rank": 9
+  },
+  "modbus_jp": {
+   "query": "port:502 -tag:cloud -tag:honeypot country:JP",
+   "case": "FrostyGoop(B3)・Dragos報告",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:09:13+0900",
+   "total": 4180,
+   "facets": {
+    "product": [
+     {
+      "count": 17,
+      "value": "TLS"
+     },
+     {
+      "count": 12,
+      "value": "PDR M800"
+     },
+     {
+      "count": 5,
+      "value": "nginx"
+     },
+     {
+      "count": 3,
+      "value": "Microsoft IIS httpd"
+     },
+     {
+      "count": 3,
+      "value": "Ncat http proxy"
+     },
+     {
+      "count": 2,
+      "value": "Jetty"
+     },
+     {
+      "count": 2,
+      "value": "VNC"
+     },
+     {
+      "count": 1,
+      "value": "Dahua DHI-NVR4116HS-4KS2"
+     },
+     {
+      "count": 1,
+      "value": "Home Assistant"
+     },
+     {
+      "count": 1,
+      "value": "Plex Media Server"
+     },
+     {
+      "count": 1,
+      "value": "ProFTPD"
+     },
+     {
+      "count": 1,
+      "value": "QNAP TS-231P2"
+     },
+     {
+      "count": 1,
+      "value": "TM251MESE"
+     }
+    ],
+    "tag": [
+     {
+      "count": 429,
+      "value": "ics"
+     },
+     {
+      "count": 6,
+      "value": "self-signed"
+     },
+     {
+      "count": 4,
+      "value": "eol-product"
+     },
+     {
+      "count": 1,
+      "value": "iot"
+     },
+     {
+      "count": 1,
+      "value": "open-dir"
+     }
+    ],
+    "port": [
+     {
+      "count": 4180,
+      "value": 502
+     }
+    ],
+    "http.title": [
+     {
+      "value": "BB-ST165 Network Camera",
+      "count": 45
+     },
+     {
+      "value": "BB-SW172 Network Camera",
+      "count": 28
+     },
+     {
+      "value": "403 Forbidden",
+      "count": 18
+     },
+     {
+      "value": "401 Unauthorized",
+      "count": 8
+     },
+     {
+      "value": "WV-S1516L Network Camera",
+      "count": 6
+     },
+     {
+      "value": "AXIS",
+      "count": 5
+     },
+     {
+      "value": "400 Bad Request",
+      "count": 4
+     },
+     {
+      "value": "401 - Unauthorized",
+      "count": 4
+     },
+     {
+      "value": "Redirecting...",
+      "count": 4
+     },
+     {
+      "value": "index",
+      "count": 3
+     }
+    ]
+   },
+   "note": null
+  },
+  "modbus_jp_r16": {
+   "query": "port:502 -tag:cloud -tag:honeypot country:JP after:25/10/2026",
+   "case": "FrostyGoop(B3)・Dragos報告",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:09:14+0900",
+   "total": 3023,
+   "facets": {},
+   "note": null
+  },
+  "s7_world": {
+   "query": "port:102 -tag:cloud -tag:honeypot",
+   "case": "AA26-097A更新(S7-1200)",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:09:15+0900",
+   "total": 397364,
+   "facets": {
+    "country": [
+     {
+      "count": 193400,
+      "value": "CN"
+     },
+     {
+      "count": 47125,
+      "value": "US"
+     },
+     {
+      "count": 46165,
+      "value": "SG"
+     },
+     {
+      "count": 36477,
+      "value": "IL"
+     },
+     {
+      "count": 26508,
+      "value": "GB"
+     },
+     {
+      "count": 5215,
+      "value": "DE"
+     },
+     {
+      "count": 4678,
+      "value": "NL"
+     },
+     {
+      "count": 3864,
+      "value": "JP"
+     },
+     {
+      "count": 3292,
+      "value": "CA"
+     },
+     {
+      "count": 3149,
+      "value": "FR"
+     },
+     {
+      "count": 1961,
+      "value": "BR"
+     },
+     {
+      "count": 1904,
+      "value": "HK"
+     },
+     {
+      "count": 1619,
+      "value": "ES"
+     },
+     {
+      "count": 1316,
+      "value": "ID"
+     },
+     {
+      "count": 1260,
+      "value": "PL"
+     },
+     {
+      "count": 1160,
+      "value": "IT"
+     },
+     {
+      "count": 1111,
+      "value": "SE"
+     },
+     {
+      "count": 1094,
+      "value": "TW"
+     },
+     {
+      "count": 925,
+      "value": "VN"
+     },
+     {
+      "count": 902,
+      "value": "TR"
+     },
+     {
+      "count": 709,
+      "value": "AE"
+     },
+     {
+      "count": 659,
+      "value": "AU"
+     },
+     {
+      "count": 636,
+      "value": "CZ"
+     },
+     {
+      "count": 586,
+      "value": "TH"
+     },
+     {
+      "count": 576,
+      "value": "MX"
+     },
+     {
+      "count": 550,
+      "value": "MY"
+     },
+     {
+      "count": 547,
+      "value": "IR"
+     },
+     {
+      "count": 482,
+      "value": "KR"
+     },
+     {
+      "count": 453,
+      "value": "IN"
+     },
+     {
+      "count": 414,
+      "value": "RO"
+     },
+     {
+      "count": 378,
+      "value": "FI"
+     },
+     {
+      "count": 376,
+      "value": "BE"
+     },
+     {
+      "count": 374,
+      "value": "AT"
+     },
+     {
+      "count": 361,
+      "value": "CL"
+     },
+     {
+      "count": 342,
+      "value": "CH"
+     },
+     {
+      "count": 336,
+      "value": "SA"
+     },
+     {
+      "count": 334,
+      "value": "MA"
+     },
+     {
+      "count": 304,
+      "value": "GR"
+     },
+     {
+      "count": 269,
+      "value": "SI"
+     },
+     {
+      "count": 263,
+      "value": "HU"
+     },
+     {
+      "count": 261,
+      "value": "AR"
+     },
+     {
+      "count": 239,
+      "value": "HR"
+     },
+     {
+      "count": 194,
+      "value": "DZ"
+     },
+     {
+      "count": 194,
+      "value": "PK"
+     },
+     {
+      "count": 193,
+      "value": "UA"
+     },
+     {
+      "count": 188,
+      "value": "PT"
+     },
+     {
+      "count": 187,
+      "value": "LT"
+     },
+     {
+      "count": 183,
+      "value": "LU"
+     },
+     {
+      "count": 163,
+      "value": "PH"
+     },
+     {
+      "count": 144,
+      "value": "BG"
+     }
+    ]
+   },
+   "note": null,
+   "jp_count": 3864,
+   "jp_rank": 8
+  },
+  "s7_jp": {
+   "query": "port:102 -tag:cloud -tag:honeypot country:JP",
+   "case": "AA26-097A更新(S7-1200)",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:09:17+0900",
+   "total": 3864,
+   "facets": {
+    "product": [
+     {
+      "count": 27,
+      "value": "TLS"
+     },
+     {
+      "count": 11,
+      "value": "PDR M800"
+     },
+     {
+      "count": 8,
+      "value": "nginx"
+     },
+     {
+      "count": 4,
+      "value": "VNC"
+     },
+     {
+      "count": 3,
+      "value": "Hikvision IP Camera"
+     },
+     {
+      "count": 3,
+      "value": "ScreenConnect"
+     },
+     {
+      "count": 2,
+      "value": "Microsoft IIS httpd"
+     },
+     {
+      "count": 1,
+      "value": "Dahua DHI-NVR4116HS-4KS2"
+     },
+     {
+      "count": 1,
+      "value": "Dahua-based DH-XVR5104H-I3-4P"
+     },
+     {
+      "count": 1,
+      "value": "IP Camera"
+     },
+     {
+      "count": 1,
+      "value": "Jetty"
+     },
+     {
+      "count": 1,
+      "value": "Ncat http proxy"
+     },
+     {
+      "count": 1,
+      "value": "OpenSSH"
+     },
+     {
+      "count": 1,
+      "value": "Plex Media Server"
+     },
+     {
+      "count": 1,
+      "value": "ProFTPD"
+     }
+    ],
+    "tag": [
+     {
+      "count": 1194,
+      "value": "ics"
+     },
+     {
+      "count": 7,
+      "value": "eol-product"
+     },
+     {
+      "count": 2,
+      "value": "self-signed"
+     }
+    ],
+    "port": [
+     {
+      "count": 3864,
+      "value": 102
+     }
+    ],
+    "http.title": [
+     {
+      "value": "BB-ST165 Network Camera",
+      "count": 75
+     },
+     {
+      "value": "BB-SW172 Network Camera",
+      "count": 50
+     },
+     {
+      "value": "401 Unauthorized",
+      "count": 18
+     },
+     {
+      "value": "WV-S1516L Network Camera",
+      "count": 10
+     },
+     {
+      "value": "BB-SC364 Network Camera",
+      "count": 6
+     },
+     {
+      "value": "AXIS",
+      "count": 4
+     },
+     {
+      "value": "BB-ST162 Network Camera",
+      "count": 4
+     },
+     {
+      "value": "Redirecting...",
+      "count": 4
+     },
+     {
+      "value": "WV-S65340-Z2 Network Camera",
+      "count": 4
+     },
+     {
+      "value": "-",
+      "count": 3
+     }
+    ]
+   },
+   "note": null
+  },
+  "s7_jp_r16": {
+   "query": "port:102 -tag:cloud -tag:honeypot country:JP after:25/10/2026",
+   "case": "AA26-097A更新(S7-1200)",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:09:19+0900",
+   "total": 3124,
+   "facets": {},
+   "note": null
+  },
+  "enip_world": {
+   "query": "port:44818 -tag:cloud -tag:honeypot",
+   "case": "AA26-097A(Rockwell)",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:09:21+0900",
+   "total": 498339,
+   "facets": {
+    "country": [
+     {
+      "count": 153799,
+      "value": "CN"
+     },
+     {
+      "count": 112275,
+      "value": "US"
+     },
+     {
+      "count": 64049,
+      "value": "GB"
+     },
+     {
+      "count": 43849,
+      "value": "IL"
+     },
+     {
+      "count": 35983,
+      "value": "SG"
+     },
+     {
+      "count": 14225,
+      "value": "DE"
+     },
+     {
+      "count": 13304,
+      "value": "CH"
+     },
+     {
+      "count": 11622,
+      "value": "UA"
+     },
+     {
+      "count": 8065,
+      "value": "CA"
+     },
+     {
+      "count": 5249,
+      "value": "HK"
+     },
+     {
+      "count": 5108,
+      "value": "NL"
+     },
+     {
+      "count": 3186,
+      "value": "JP"
+     },
+     {
+      "count": 2681,
+      "value": "FR"
+     },
+     {
+      "count": 2617,
+      "value": "ES"
+     },
+     {
+      "count": 2272,
+      "value": "ZA"
+     },
+     {
+      "count": 1742,
+      "value": "VN"
+     },
+     {
+      "count": 1532,
+      "value": "BR"
+     },
+     {
+      "count": 1146,
+      "value": "PL"
+     },
+     {
+      "count": 1083,
+      "value": "SE"
+     },
+     {
+      "count": 1071,
+      "value": "KR"
+     },
+     {
+      "count": 1066,
+      "value": "RS"
+     },
+     {
+      "count": 1036,
+      "value": "ID"
+     },
+     {
+      "count": 741,
+      "value": "AU"
+     },
+     {
+      "count": 641,
+      "value": "TH"
+     },
+     {
+      "count": 605,
+      "value": "TR"
+     },
+     {
+      "count": 482,
+      "value": "IT"
+     },
+     {
+      "count": 479,
+      "value": "TW"
+     },
+     {
+      "count": 468,
+      "value": "CZ"
+     },
+     {
+      "count": 463,
+      "value": "AE"
+     },
+     {
+      "count": 463,
+      "value": "RO"
+     },
+     {
+      "count": 446,
+      "value": "MD"
+     },
+     {
+      "count": 419,
+      "value": "MX"
+     },
+     {
+      "count": 404,
+      "value": "IR"
+     },
+     {
+      "count": 397,
+      "value": "MY"
+     },
+     {
+      "count": 336,
+      "value": "IN"
+     },
+     {
+      "count": 310,
+      "value": "FI"
+     },
+     {
+      "count": 280,
+      "value": "CL"
+     },
+     {
+      "count": 230,
+      "value": "LT"
+     },
+     {
+      "count": 224,
+      "value": "EE"
+     },
+     {
+      "count": 203,
+      "value": "MA"
+     },
+     {
+      "count": 196,
+      "value": "BE"
+     },
+     {
+      "count": 196,
+      "value": "SA"
+     },
+     {
+      "count": 174,
+      "value": "AR"
+     },
+     {
+      "count": 166,
+      "value": "PT"
+     },
+     {
+      "count": 161,
+      "value": "AT"
+     },
+     {
+      "count": 137,
+      "value": "PH"
+     },
+     {
+      "count": 132,
+      "value": "HU"
+     },
+     {
+      "count": 131,
+      "value": "PK"
+     },
+     {
+      "count": 122,
+      "value": "LU"
+     },
+     {
+      "count": 115,
+      "value": "NZ"
+     }
+    ]
+   },
+   "note": null,
+   "jp_count": 3186,
+   "jp_rank": 12
+  },
+  "enip_jp": {
+   "query": "port:44818 -tag:cloud -tag:honeypot country:JP",
+   "case": "AA26-097A(Rockwell)",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:09:22+0900",
+   "total": 3186,
+   "facets": {
+    "product": [
+     {
+      "count": 479,
+      "value": "nginx"
+     },
+     {
+      "count": 32,
+      "value": "HMS Networks"
+     },
+     {
+      "count": 19,
+      "value": "TLS"
+     },
+     {
+      "count": 16,
+      "value": "PDR M800"
+     },
+     {
+      "count": 4,
+      "value": "Omron Corporation"
+     },
+     {
+      "count": 2,
+      "value": "Jetty"
+     },
+     {
+      "count": 2,
+      "value": "ProFTPD"
+     },
+     {
+      "count": 2,
+      "value": "VNC"
+     },
+     {
+      "count": 1,
+      "value": "Dahua DHI-NVR4116HS-4KS2"
+     },
+     {
+      "count": 1,
+      "value": "Dahua-based DH-XVR5104H-I3-4P"
+     },
+     {
+      "count": 1,
+      "value": "Home Assistant"
+     },
+     {
+      "count": 1,
+      "value": "Keyence Corporation"
+     },
+     {
+      "count": 1,
+      "value": "Microsoft IIS httpd"
+     },
+     {
+      "count": 1,
+      "value": "Panasonic Industrial Devices SUNX Co., Ltd."
+     },
+     {
+      "count": 1,
+      "value": "ScreenConnect"
+     }
+    ],
+    "tag": [
+     {
+      "count": 38,
+      "value": "ics"
+     },
+     {
+      "count": 4,
+      "value": "eol-product"
+     },
+     {
+      "count": 4,
+      "value": "proxy"
+     },
+     {
+      "count": 1,
+      "value": "iot"
+     }
+    ],
+    "port": [
+     {
+      "count": 3186,
+      "value": 44818
+     }
+    ],
+    "http.title": [
+     {
+      "value": "BB-ST165 Network Camera",
+      "count": 42
+     },
+     {
+      "value": "BB-SW172 Network Camera",
+      "count": 18
+     },
+     {
+      "value": "WV-S1516L Network Camera",
+      "count": 10
+     },
+     {
+      "value": "401 Unauthorized",
+      "count": 8
+     },
+     {
+      "value": "Redirecting...",
+      "count": 4
+     },
+     {
+      "value": "401 - Unauthorized",
+      "count": 3
+     },
+     {
+      "value": "WV-S1536L Network Camera",
+      "count": 3
+     },
+     {
+      "value": "index",
+      "count": 3
+     },
+     {
+      "value": "BB-SC382 Network Camera",
+      "count": 2
+     },
+     {
+      "value": "(other titles, redacted)",
+      "count": 2
+     }
+    ]
+   },
+   "note": null
+  },
+  "enip_jp_r16": {
+   "query": "port:44818 -tag:cloud -tag:honeypot country:JP after:25/10/2026",
+   "case": "AA26-097A(Rockwell)",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:09:24+0900",
+   "total": 2199,
+   "facets": {},
+   "note": null
+  },
+  "micrologix_world": {
+   "query": "\"MicroLogix\" -tag:cloud -tag:honeypot",
+   "case": "米水道2026-07(A13)",
+   "confidence": "check",
+   "queried_at": "2026-11-10T22:09:25+0900",
+   "total": 193,
+   "facets": {
+    "country": [
+     {
+      "count": 118,
+      "value": "CN"
+     },
+     {
+      "count": 52,
+      "value": "US"
+     },
+     {
+      "count": 5,
+      "value": "ID"
+     },
+     {
+      "count": 4,
+      "value": "CA"
+     },
+     {
+      "count": 3,
+      "value": "DE"
+     },
+     {
+      "count": 3,
+      "value": "TH"
+     },
+     {
+      "count": 2,
+      "value": "KR"
+     },
+     {
+      "count": 2,
+      "value": "TW"
+     },
+     {
+      "count": 1,
+      "value": "CL"
+     },
+     {
+      "count": 1,
+      "value": "GB"
+     },
+     {
+      "count": 1,
+      "value": "PH"
+     },
+     {
+      "count": 1,
+      "value": "SG"
+     }
+    ]
+   },
+   "note": null,
+   "jp_count": null,
+   "jp_rank": null
+  },
+  "micrologix_jp": {
+   "query": "\"MicroLogix\" -tag:cloud -tag:honeypot country:JP",
+   "case": "米水道2026-07(A13)",
+   "confidence": "check",
+   "queried_at": "2026-11-10T22:09:27+0900",
+   "total": 0,
+   "facets": {
+    "product": [],
+    "tag": [],
+    "port": [],
+    "http.title": []
+   },
+   "note": null
+  },
+  "micrologix_jp_r16": {
+   "query": "\"MicroLogix\" -tag:cloud -tag:honeypot country:JP after:25/10/2026",
+   "case": "米水道2026-07(A13)",
+   "confidence": "check",
+   "queried_at": "2026-11-10T22:09:28+0900",
+   "total": 0,
+   "facets": {},
+   "note": null
+  },
+  "unitronics_world": {
+   "query": "port:20256 -tag:cloud -tag:honeypot",
+   "case": "AA23-335A(A2)",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:09:29+0900",
+   "total": 513011,
+   "facets": {
+    "country": [
+     {
+      "count": 142474,
+      "value": "CN"
+     },
+     {
+      "count": 119317,
+      "value": "US"
+     },
+     {
+      "count": 66540,
+      "value": "GB"
+     },
+     {
+      "count": 43923,
+      "value": "IL"
+     },
+     {
+      "count": 36092,
+      "value": "SG"
+     },
+     {
+      "count": 14282,
+      "value": "DE"
+     },
+     {
+      "count": 13371,
+      "value": "CH"
+     },
+     {
+      "count": 11626,
+      "value": "UA"
+     },
+     {
+      "count": 11590,
+      "value": "VN"
+     },
+     {
+      "count": 8827,
+      "value": "HK"
+     },
+     {
+      "count": 7695,
+      "value": "CA"
+     },
+     {
+      "count": 5447,
+      "value": "JP"
+     },
+     {
+      "count": 4404,
+      "value": "NL"
+     },
+     {
+      "count": 2751,
+      "value": "FR"
+     },
+     {
+      "count": 2288,
+      "value": "ZA"
+     },
+     {
+      "count": 2266,
+      "value": "ES"
+     },
+     {
+      "count": 1886,
+      "value": "BR"
+     },
+     {
+      "count": 1359,
+      "value": "PL"
+     },
+     {
+      "count": 1280,
+      "value": "KR"
+     },
+     {
+      "count": 1211,
+      "value": "SE"
+     },
+     {
+      "count": 1114,
+      "value": "RS"
+     },
+     {
+      "count": 1066,
+      "value": "ID"
+     },
+     {
+      "count": 769,
+      "value": "TH"
+     },
+     {
+      "count": 746,
+      "value": "AU"
+     },
+     {
+      "count": 659,
+      "value": "MX"
+     },
+     {
+      "count": 626,
+      "value": "TR"
+     },
+     {
+      "count": 496,
+      "value": "AE"
+     },
+     {
+      "count": 463,
+      "value": "MD"
+     },
+     {
+      "count": 433,
+      "value": "RO"
+     },
+     {
+      "count": 432,
+      "value": "CZ"
+     },
+     {
+      "count": 407,
+      "value": "MY"
+     },
+     {
+      "count": 393,
+      "value": "IR"
+     },
+     {
+      "count": 383,
+      "value": "BG"
+     },
+     {
+      "count": 374,
+      "value": "IT"
+     },
+     {
+      "count": 328,
+      "value": "FI"
+     },
+     {
+      "count": 322,
+      "value": "TW"
+     },
+     {
+      "count": 303,
+      "value": "IN"
+     },
+     {
+      "count": 279,
+      "value": "CL"
+     },
+     {
+      "count": 275,
+      "value": "LT"
+     },
+     {
+      "count": 233,
+      "value": "EE"
+     },
+     {
+      "count": 196,
+      "value": "SA"
+     },
+     {
+      "count": 173,
+      "value": "MA"
+     },
+     {
+      "count": 170,
+      "value": "AR"
+     },
+     {
+      "count": 158,
+      "value": "HU"
+     },
+     {
+      "count": 145,
+      "value": "PT"
+     },
+     {
+      "count": 140,
+      "value": "BE"
+     },
+     {
+      "count": 133,
+      "value": "PH"
+     },
+     {
+      "count": 132,
+      "value": "PK"
+     },
+     {
+      "count": 123,
+      "value": "LU"
+     },
+     {
+      "count": 117,
+      "value": "AT"
+     }
+    ]
+   },
+   "note": null,
+   "jp_count": 5447,
+   "jp_rank": 12
+  },
+  "unitronics_jp": {
+   "query": "port:20256 -tag:cloud -tag:honeypot country:JP",
+   "case": "AA23-335A(A2)",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:09:31+0900",
+   "total": 5447,
+   "facets": {
+    "product": [
+     {
+      "count": 1057,
+      "value": "nginx"
+     },
+     {
+      "count": 72,
+      "value": "thttpd"
+     },
+     {
+      "count": 19,
+      "value": "TLS"
+     },
+     {
+      "count": 11,
+      "value": "PDR M800"
+     },
+     {
+      "count": 3,
+      "value": "Jetty"
+     },
+     {
+      "count": 3,
+      "value": "OpenSSH"
+     },
+     {
+      "count": 2,
+      "value": "ScreenConnect"
+     },
+     {
+      "count": 2,
+      "value": "VNC"
+     },
+     {
+      "count": 1,
+      "value": "AkamaiGHost"
+     },
+     {
+      "count": 1,
+      "value": "Home Assistant"
+     },
+     {
+      "count": 1,
+      "value": "Microsoft IIS httpd"
+     },
+     {
+      "count": 1,
+      "value": "QNAP TS-231P2"
+     }
+    ],
+    "tag": [
+     {
+      "count": 68,
+      "value": "eol-product"
+     },
+     {
+      "count": 21,
+      "value": "proxy"
+     },
+     {
+      "count": 11,
+      "value": "self-signed"
+     },
+     {
+      "count": 1,
+      "value": "iot"
+     }
+    ],
+    "port": [
+     {
+      "count": 5447,
+      "value": 20256
+     }
+    ],
+    "http.title": [
+     {
+      "value": "401 Unauthorized",
+      "count": 6
+     },
+     {
+      "value": "Redirecting...",
+      "count": 6
+     },
+     {
+      "value": "497",
+      "count": 5
+     },
+     {
+      "value": "401 - Unauthorized",
+      "count": 4
+     },
+     {
+      "value": "302 Found",
+      "count": 2
+     },
+     {
+      "value": "AXIS",
+      "count": 2
+     },
+     {
+      "value": "Login",
+      "count": 2
+     },
+     {
+      "value": "(other titles, redacted)",
+      "count": 6
+     }
+    ]
+   },
+   "note": null
+  },
+  "unitronics_jp_r16": {
+   "query": "port:20256 -tag:cloud -tag:honeypot country:JP after:25/10/2026",
+   "case": "AA23-335A(A2)",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:09:33+0900",
+   "total": 3717,
+   "facets": {},
+   "note": null
+  },
+  "vnc_noauth_world": {
+   "query": "\"authentication disabled\" \"RFB\" -tag:cloud -tag:honeypot",
+   "case": "AA25-343A(VNC経由HMI)",
+   "confidence": "check",
+   "queried_at": "2026-11-10T22:09:34+0900",
+   "total": 3153,
+   "facets": {
+    "country": [
+     {
+      "count": 813,
+      "value": "US"
+     },
+     {
+      "count": 377,
+      "value": "CN"
+     },
+     {
+      "count": 293,
+      "value": "HK"
+     },
+     {
+      "count": 217,
+      "value": "DE"
+     },
+     {
+      "count": 113,
+      "value": "FR"
+     },
+     {
+      "count": 92,
+      "value": "KR"
+     },
+     {
+      "count": 90,
+      "value": "BR"
+     },
+     {
+      "count": 86,
+      "value": "FI"
+     },
+     {
+      "count": 74,
+      "value": "ES"
+     },
+     {
+      "count": 69,
+      "value": "SE"
+     },
+     {
+      "count": 64,
+      "value": "CA"
+     },
+     {
+      "count": 60,
+      "value": "IT"
+     },
+     {
+      "count": 47,
+      "value": "AU"
+     },
+     {
+      "count": 45,
+      "value": "JP"
+     },
+     {
+      "count": 45,
+      "value": "NL"
+     },
+     {
+      "count": 44,
+      "value": "GB"
+     },
+     {
+      "count": 44,
+      "value": "IN"
+     },
+     {
+      "count": 42,
+      "value": "PL"
+     },
+     {
+      "count": 41,
+      "value": "VN"
+     },
+     {
+      "count": 38,
+      "value": "ID"
+     },
+     {
+      "count": 30,
+      "value": "TH"
+     },
+     {
+      "count": 28,
+      "value": "PT"
+     },
+     {
+      "count": 26,
+      "value": "TR"
+     },
+     {
+      "count": 23,
+      "value": "UA"
+     },
+     {
+      "count": 22,
+      "value": "TW"
+     },
+     {
+      "count": 20,
+      "value": "RU"
+     },
+     {
+      "count": 16,
+      "value": "BD"
+     },
+     {
+      "count": 16,
+      "value": "SG"
+     },
+     {
+      "count": 14,
+      "value": "IR"
+     },
+     {
+      "count": 14,
+      "value": "RO"
+     },
+     {
+      "count": 13,
+      "value": "UY"
+     },
+     {
+      "count": 12,
+      "value": "HU"
+     },
+     {
+      "count": 12,
+      "value": "IE"
+     },
+     {
+      "count": 11,
+      "value": "PH"
+     },
+     {
+      "count": 10,
+      "value": "BG"
+     },
+     {
+      "count": 9,
+      "value": "MX"
+     },
+     {
+      "count": 8,
+      "value": "AE"
+     },
+     {
+      "count": 8,
+      "value": "CH"
+     },
+     {
+      "count": 8,
+      "value": "CZ"
+     },
+     {
+      "count": 7,
+      "value": "AR"
+     },
+     {
+      "count": 7,
+      "value": "CO"
+     },
+     {
+      "count": 7,
+      "value": "DK"
+     },
+     {
+      "count": 7,
+      "value": "MY"
+     },
+     {
+      "count": 7,
+      "value": "UG"
+     },
+     {
+      "count": 6,
+      "value": "BE"
+     },
+     {
+      "count": 6,
+      "value": "GR"
+     },
+     {
+      "count": 6,
+      "value": "IL"
+     },
+     {
+      "count": 6,
+      "value": "KZ"
+     },
+     {
+      "count": 6,
+      "value": "LT"
+     },
+     {
+      "count": 6,
+      "value": "NO"
+     }
+    ]
+   },
+   "note": null,
+   "jp_count": 45,
+   "jp_rank": 14
+  },
+  "vnc_noauth_jp": {
+   "query": "\"authentication disabled\" \"RFB\" -tag:cloud -tag:honeypot country:JP",
+   "case": "AA25-343A(VNC経由HMI)",
+   "confidence": "check",
+   "queried_at": "2026-11-10T22:09:35+0900",
+   "total": 45,
+   "facets": {
+    "product": [
+     {
+      "count": 45,
+      "value": "VNC"
+     }
+    ],
+    "tag": [
+     {
+      "count": 1,
+      "value": "scanner"
+     }
+    ],
+    "port": [
+     {
+      "count": 24,
+      "value": 5900
+     },
+     {
+      "count": 9,
+      "value": 5901
+     },
+     {
+      "count": 2,
+      "value": 5902
+     },
+     {
+      "count": 2,
+      "value": 5903
+     },
+     {
+      "count": 2,
+      "value": 5999
+     },
+     {
+      "count": 1,
+      "value": 81
+     },
+     {
+      "count": 1,
+      "value": 6001
+     },
+     {
+      "count": 1,
+      "value": 9900
+     },
+     {
+      "count": 1,
+      "value": 11111
+     },
+     {
+      "count": 1,
+      "value": 12166
+     },
+     {
+      "count": 1,
+      "value": 59012
+     }
+    ],
+    "http.title": []
+   },
+   "note": null
+  },
+  "vnc_noauth_jp_r16": {
+   "query": "\"authentication disabled\" \"RFB\" -tag:cloud -tag:honeypot country:JP after:25/10/2026",
+   "case": "AA25-343A(VNC経由HMI)",
+   "confidence": "check",
+   "queried_at": "2026-11-10T22:09:37+0900",
+   "total": 38,
+   "facets": {},
+   "note": null
+  },
+  "vnc_noauth_ics_world": {
+   "query": "\"authentication disabled\" \"RFB\" screenshot.label:ics -tag:cloud -tag:honeypot",
+   "case": "AA25-343A(画面がICSと判定されたもの)",
+   "confidence": "check",
+   "queried_at": "2026-11-10T22:09:48+0900",
+   "total": 156,
+   "facets": {
+    "country": [
+     {
+      "count": 37,
+      "value": "US"
+     },
+     {
+      "count": 26,
+      "value": "PL"
+     },
+     {
+      "count": 9,
+      "value": "KR"
+     },
+     {
+      "count": 8,
+      "value": "AU"
+     },
+     {
+      "count": 8,
+      "value": "TR"
+     },
+     {
+      "count": 6,
+      "value": "CN"
+     },
+     {
+      "count": 6,
+      "value": "IT"
+     },
+     {
+      "count": 5,
+      "value": "DE"
+     },
+     {
+      "count": 5,
+      "value": "JP"
+     },
+     {
+      "count": 5,
+      "value": "SE"
+     },
+     {
+      "count": 4,
+      "value": "FR"
+     },
+     {
+      "count": 3,
+      "value": "BE"
+     },
+     {
+      "count": 3,
+      "value": "LT"
+     },
+     {
+      "count": 3,
+      "value": "NZ"
+     },
+     {
+      "count": 2,
+      "value": "BR"
+     },
+     {
+      "count": 2,
+      "value": "CA"
+     },
+     {
+      "count": 2,
+      "value": "DK"
+     },
+     {
+      "count": 2,
+      "value": "ES"
+     },
+     {
+      "count": 2,
+      "value": "TW"
+     },
+     {
+      "count": 2,
+      "value": "UA"
+     },
+     {
+      "count": 2,
+      "value": "UY"
+     },
+     {
+      "count": 1,
+      "value": "BB"
+     },
+     {
+      "count": 1,
+      "value": "HK"
+     },
+     {
+      "count": 1,
+      "value": "HU"
+     },
+     {
+      "count": 1,
+      "value": "IN"
+     },
+     {
+      "count": 1,
+      "value": "LV"
+     },
+     {
+      "count": 1,
+      "value": "NL"
+     },
+     {
+      "count": 1,
+      "value": "NO"
+     },
+     {
+      "count": 1,
+      "value": "PS"
+     },
+     {
+      "count": 1,
+      "value": "RO"
+     },
+     {
+      "count": 1,
+      "value": "RU"
+     },
+     {
+      "count": 1,
+      "value": "SG"
+     },
+     {
+      "count": 1,
+      "value": "SK"
+     },
+     {
+      "count": 1,
+      "value": "VN"
+     },
+     {
+      "count": 1,
+      "value": "ZA"
+     }
+    ]
+   },
+   "note": null,
+   "jp_count": 5,
+   "jp_rank": 9
+  },
+  "vnc_noauth_ics_jp": {
+   "query": "\"authentication disabled\" \"RFB\" screenshot.label:ics -tag:cloud -tag:honeypot country:JP",
+   "case": "AA25-343A(画面がICSと判定されたもの)",
+   "confidence": "check",
+   "queried_at": "2026-11-10T22:09:50+0900",
+   "total": 5,
+   "facets": {
+    "product": [
+     {
+      "count": 5,
+      "value": "VNC"
+     }
+    ],
+    "tag": [],
+    "port": [
+     {
+      "count": 5,
+      "value": 5900
+     }
+    ],
+    "http.title": []
+   },
+   "note": null
+  },
+  "vnc_noauth_ics_jp_r16": {
+   "query": "\"authentication disabled\" \"RFB\" screenshot.label:ics -tag:cloud -tag:honeypot country:JP after:25/10/2026",
+   "case": "AA25-343A(画面がICSと判定されたもの)",
+   "confidence": "check",
+   "queried_at": "2026-11-10T22:09:53+0900",
+   "total": 5,
+   "facets": {},
+   "note": null
+  },
+  "bacnet_world": {
+   "query": "port:47808 -tag:cloud -tag:honeypot",
+   "case": "ビル設備",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:09:54+0900",
+   "total": 42009,
+   "facets": {
+    "country": [
+     {
+      "count": 30278,
+      "value": "US"
+     },
+     {
+      "count": 2457,
+      "value": "CA"
+     },
+     {
+      "count": 1894,
+      "value": "JP"
+     },
+     {
+      "count": 715,
+      "value": "AU"
+     },
+     {
+      "count": 631,
+      "value": "GB"
+     },
+     {
+      "count": 595,
+      "value": "CN"
+     },
+     {
+      "count": 593,
+      "value": "DE"
+     },
+     {
+      "count": 447,
+      "value": "FR"
+     },
+     {
+      "count": 347,
+      "value": "IT"
+     },
+     {
+      "count": 335,
+      "value": "SE"
+     },
+     {
+      "count": 330,
+      "value": "NL"
+     },
+     {
+      "count": 255,
+      "value": "ES"
+     },
+     {
+      "count": 227,
+      "value": "NO"
+     },
+     {
+      "count": 209,
+      "value": "IN"
+     },
+     {
+      "count": 147,
+      "value": "BR"
+     },
+     {
+      "count": 143,
+      "value": "ZA"
+     },
+     {
+      "count": 130,
+      "value": "CH"
+     },
+     {
+      "count": 121,
+      "value": "PR"
+     },
+     {
+      "count": 111,
+      "value": "HU"
+     },
+     {
+      "count": 103,
+      "value": "HK"
+     },
+     {
+      "count": 100,
+      "value": "PL"
+     },
+     {
+      "count": 99,
+      "value": "MX"
+     },
+     {
+      "count": 91,
+      "value": "KR"
+     },
+     {
+      "count": 82,
+      "value": "TR"
+     },
+     {
+      "count": 81,
+      "value": "DK"
+     },
+     {
+      "count": 75,
+      "value": "NZ"
+     },
+     {
+      "count": 69,
+      "value": "TH"
+     },
+     {
+      "count": 68,
+      "value": "AT"
+     },
+     {
+      "count": 65,
+      "value": "FI"
+     },
+     {
+      "count": 60,
+      "value": "IE"
+     },
+     {
+      "count": 56,
+      "value": "CO"
+     },
+     {
+      "count": 56,
+      "value": "CZ"
+     },
+     {
+      "count": 47,
+      "value": "IL"
+     },
+     {
+      "count": 42,
+      "value": "TW"
+     },
+     {
+      "count": 40,
+      "value": "BE"
+     },
+     {
+      "count": 38,
+      "value": "SG"
+     },
+     {
+      "count": 37,
+      "value": "MY"
+     },
+     {
+      "count": 35,
+      "value": "RO"
+     },
+     {
+      "count": 33,
+      "value": "SK"
+     },
+     {
+      "count": 32,
+      "value": "AE"
+     },
+     {
+      "count": 30,
+      "value": "IS"
+     },
+     {
+      "count": 28,
+      "value": "ID"
+     },
+     {
+      "count": 27,
+      "value": "LT"
+     },
+     {
+      "count": 27,
+      "value": "VN"
+     },
+     {
+      "count": 25,
+      "value": "KE"
+     },
+     {
+      "count": 25,
+      "value": "PA"
+     },
+     {
+      "count": 24,
+      "value": "CL"
+     },
+     {
+      "count": 24,
+      "value": "EE"
+     },
+     {
+      "count": 24,
+      "value": "GR"
+     },
+     {
+      "count": 24,
+      "value": "JE"
+     }
+    ]
+   },
+   "note": null,
+   "jp_count": 1894,
+   "jp_rank": 3
+  },
+  "bacnet_jp": {
+   "query": "port:47808 -tag:cloud -tag:honeypot country:JP",
+   "case": "ビル設備",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:09:56+0900",
+   "total": 1895,
+   "facets": {
+    "product": [
+     {
+      "count": 1,
+      "value": "DSC_1616E"
+     },
+     {
+      "count": 1,
+      "value": "SIM"
+     },
+     {
+      "count": 1,
+      "value": "UG65-L00J-915M-EA"
+     },
+     {
+      "count": 1,
+      "value": "UG67-L00J-915M"
+     }
+    ],
+    "tag": [
+     {
+      "count": 4,
+      "value": "ics"
+     }
+    ],
+    "port": [
+     {
+      "count": 1895,
+      "value": 47808
+     }
+    ],
+    "http.title": []
+   },
+   "note": null
+  },
+  "bacnet_jp_r16": {
+   "query": "port:47808 -tag:cloud -tag:honeypot country:JP after:25/10/2026",
+   "case": "ビル設備",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:09:57+0900",
+   "total": 1666,
+   "facets": {},
+   "note": null
+  },
+  "niagara_fox_world": {
+   "query": "port:1911,4911 fox -tag:cloud -tag:honeypot",
+   "case": "ビル設備(Niagara)",
+   "confidence": "check",
+   "queried_at": "2026-11-10T22:09:59+0900",
+   "total": 32583,
+   "facets": {
+    "country": [
+     {
+      "count": 20987,
+      "value": "US"
+     },
+     {
+      "count": 2992,
+      "value": "CA"
+     },
+     {
+      "count": 1130,
+      "value": "IT"
+     },
+     {
+      "count": 1018,
+      "value": "GB"
+     },
+     {
+      "count": 954,
+      "value": "ES"
+     },
+     {
+      "count": 881,
+      "value": "AU"
+     },
+     {
+      "count": 683,
+      "value": "FR"
+     },
+     {
+      "count": 644,
+      "value": "CN"
+     },
+     {
+      "count": 567,
+      "value": "NL"
+     },
+     {
+      "count": 477,
+      "value": "DK"
+     },
+     {
+      "count": 184,
+      "value": "EE"
+     },
+     {
+      "count": 181,
+      "value": "SK"
+     },
+     {
+      "count": 157,
+      "value": "AT"
+     },
+     {
+      "count": 152,
+      "value": "SE"
+     },
+     {
+      "count": 149,
+      "value": "DE"
+     },
+     {
+      "count": 120,
+      "value": "GR"
+     },
+     {
+      "count": 95,
+      "value": "NO"
+     },
+     {
+      "count": 90,
+      "value": "PT"
+     },
+     {
+      "count": 86,
+      "value": "TR"
+     },
+     {
+      "count": 82,
+      "value": "HU"
+     },
+     {
+      "count": 58,
+      "value": "CZ"
+     },
+     {
+      "count": 53,
+      "value": "LT"
+     },
+     {
+      "count": 50,
+      "value": "HR"
+     },
+     {
+      "count": 47,
+      "value": "CH"
+     },
+     {
+      "count": 44,
+      "value": "FI"
+     },
+     {
+      "count": 40,
+      "value": "HK"
+     },
+     {
+      "count": 40,
+      "value": "PL"
+     },
+     {
+      "count": 38,
+      "value": "KR"
+     },
+     {
+      "count": 37,
+      "value": "LV"
+     },
+     {
+      "count": 36,
+      "value": "SG"
+     },
+     {
+      "count": 32,
+      "value": "BE"
+     },
+     {
+      "count": 32,
+      "value": "BR"
+     },
+     {
+      "count": 30,
+      "value": "RO"
+     },
+     {
+      "count": 30,
+      "value": "ZA"
+     },
+     {
+      "count": 27,
+      "value": "LU"
+     },
+     {
+      "count": 23,
+      "value": "TW"
+     },
+     {
+      "count": 21,
+      "value": "CL"
+     },
+     {
+      "count": 19,
+      "value": "TH"
+     },
+     {
+      "count": 18,
+      "value": "JE"
+     },
+     {
+      "count": 18,
+      "value": "PR"
+     },
+     {
+      "count": 18,
+      "value": "PS"
+     },
+     {
+      "count": 17,
+      "value": "BG"
+     },
+     {
+      "count": 15,
+      "value": "PH"
+     },
+     {
+      "count": 14,
+      "value": "MX"
+     },
+     {
+      "count": 14,
+      "value": "PA"
+     },
+     {
+      "count": 12,
+      "value": "NZ"
+     },
+     {
+      "count": 11,
+      "value": "ID"
+     },
+     {
+      "count": 10,
+      "value": "IE"
+     },
+     {
+      "count": 10,
+      "value": "RU"
+     },
+     {
+      "count": 9,
+      "value": "UA"
+     }
+    ]
+   },
+   "note": null,
+   "jp_count": null,
+   "jp_rank": null
+  },
+  "niagara_fox_jp": {
+   "query": "port:1911,4911 fox -tag:cloud -tag:honeypot country:JP",
+   "case": "ビル設備(Niagara)",
+   "confidence": "check",
+   "queried_at": "2026-11-10T22:10:01+0900",
+   "total": 8,
+   "facets": {
+    "product": [
+     {
+      "count": 7,
+      "value": "Niagara Fox"
+     }
+    ],
+    "tag": [
+     {
+      "count": 2,
+      "value": "self-signed"
+     },
+     {
+      "count": 1,
+      "value": "ics"
+     }
+    ],
+    "port": [
+     {
+      "count": 5,
+      "value": 1911
+     },
+     {
+      "count": 3,
+      "value": 4911
+     }
+    ],
+    "http.title": []
+   },
+   "note": null
+  },
+  "niagara_fox_jp_r16": {
+   "query": "port:1911,4911 fox -tag:cloud -tag:honeypot country:JP after:25/10/2026",
+   "case": "ビル設備(Niagara)",
+   "confidence": "check",
+   "queried_at": "2026-11-10T22:10:03+0900",
+   "total": 7,
+   "facets": {},
+   "note": null
+  },
+  "melsec_world": {
+   "query": "port:5006,5007 -tag:cloud -tag:honeypot",
+   "case": "国内PLC(三菱)",
+   "confidence": "check",
+   "queried_at": "2026-11-10T22:10:05+0900",
+   "total": 1074604,
+   "facets": {
+    "country": [
+     {
+      "count": 308393,
+      "value": "SG"
+     },
+     {
+      "count": 268899,
+      "value": "CN"
+     },
+     {
+      "count": 141528,
+      "value": "US"
+     },
+     {
+      "count": 74106,
+      "value": "IL"
+     },
+     {
+      "count": 31386,
+      "value": "GB"
+     },
+     {
+      "count": 28359,
+      "value": "DE"
+     },
+     {
+      "count": 25960,
+      "value": "KR"
+     },
+     {
+      "count": 21655,
+      "value": "HK"
+     },
+     {
+      "count": 21484,
+      "value": "CA"
+     },
+     {
+      "count": 16799,
+      "value": "JP"
+     },
+     {
+      "count": 13735,
+      "value": "FR"
+     },
+     {
+      "count": 13068,
+      "value": "NL"
+     },
+     {
+      "count": 11552,
+      "value": "VN"
+     },
+     {
+      "count": 8186,
+      "value": "TW"
+     },
+     {
+      "count": 6559,
+      "value": "TH"
+     },
+     {
+      "count": 6511,
+      "value": "BR"
+     },
+     {
+      "count": 5290,
+      "value": "ES"
+     },
+     {
+      "count": 4952,
+      "value": "IN"
+     },
+     {
+      "count": 4708,
+      "value": "ID"
+     },
+     {
+      "count": 3763,
+      "value": "IT"
+     },
+     {
+      "count": 3338,
+      "value": "CH"
+     },
+     {
+      "count": 3250,
+      "value": "AE"
+     },
+     {
+      "count": 3063,
+      "value": "MY"
+     },
+     {
+      "count": 3031,
+      "value": "AU"
+     },
+     {
+      "count": 2806,
+      "value": "PL"
+     },
+     {
+      "count": 2797,
+      "value": "TR"
+     },
+     {
+      "count": 2345,
+      "value": "SE"
+     },
+     {
+      "count": 2266,
+      "value": "CL"
+     },
+     {
+      "count": 2093,
+      "value": "AT"
+     },
+     {
+      "count": 1932,
+      "value": "PH"
+     },
+     {
+      "count": 1794,
+      "value": "CZ"
+     },
+     {
+      "count": 1686,
+      "value": "BE"
+     },
+     {
+      "count": 1614,
+      "value": "HU"
+     },
+     {
+      "count": 1417,
+      "value": "IR"
+     },
+     {
+      "count": 1355,
+      "value": "MX"
+     },
+     {
+      "count": 1339,
+      "value": "RO"
+     },
+     {
+      "count": 1129,
+      "value": "SA"
+     },
+     {
+      "count": 1103,
+      "value": "FI"
+     },
+     {
+      "count": 1057,
+      "value": "UA"
+     },
+     {
+      "count": 933,
+      "value": "RU"
+     },
+     {
+      "count": 905,
+      "value": "ZA"
+     },
+     {
+      "count": 718,
+      "value": "LK"
+     },
+     {
+      "count": 715,
+      "value": "BD"
+     },
+     {
+      "count": 652,
+      "value": "KH"
+     },
+     {
+      "count": 647,
+      "value": "AR"
+     },
+     {
+      "count": 613,
+      "value": "PT"
+     },
+     {
+      "count": 593,
+      "value": "KE"
+     },
+     {
+      "count": 574,
+      "value": "GR"
+     },
+     {
+      "count": 502,
+      "value": "NG"
+     },
+     {
+      "count": 484,
+      "value": "DK"
+     }
+    ]
+   },
+   "note": null,
+   "jp_count": 16799,
+   "jp_rank": 10
+  },
+  "melsec_jp": {
+   "query": "port:5006,5007 -tag:cloud -tag:honeypot country:JP",
+   "case": "国内PLC(三菱)",
+   "confidence": "check",
+   "queried_at": "2026-11-10T22:10:07+0900",
+   "total": 16798,
+   "facets": {
+    "product": [
+     {
+      "count": 7832,
+      "value": "nginx"
+     },
+     {
+      "count": 125,
+      "value": "Mitsubishi Q PLC"
+     },
+     {
+      "count": 107,
+      "value": "thttpd"
+     },
+     {
+      "count": 23,
+      "value": "TLS"
+     },
+     {
+      "count": 17,
+      "value": "PDR M800"
+     },
+     {
+      "count": 12,
+      "value": "Ncat http proxy"
+     },
+     {
+      "count": 10,
+      "value": "Socks4A"
+     },
+     {
+      "count": 5,
+      "value": "JD-GUI Java decompiler"
+     },
+     {
+      "count": 5,
+      "value": "Microsoft IIS httpd"
+     },
+     {
+      "count": 3,
+      "value": "Jetty"
+     },
+     {
+      "count": 3,
+      "value": "Plex Media Server"
+     },
+     {
+      "count": 2,
+      "value": "OpenSSH"
+     },
+     {
+      "count": 2,
+      "value": "ProFTPD"
+     },
+     {
+      "count": 2,
+      "value": "VNC"
+     },
+     {
+      "count": 1,
+      "value": "Dahua-based DH-XVR5104H-I3-4P"
+     }
+    ],
+    "tag": [
+     {
+      "count": 1016,
+      "value": "cdn"
+     },
+     {
+      "count": 202,
+      "value": "self-signed"
+     },
+     {
+      "count": 125,
+      "value": "eol-product"
+     },
+     {
+      "count": 125,
+      "value": "ics"
+     },
+     {
+      "count": 6,
+      "value": "proxy"
+     },
+     {
+      "count": 1,
+      "value": "iot"
+     }
+    ],
+    "port": [
+     {
+      "count": 10172,
+      "value": 5006
+     },
+     {
+      "count": 6626,
+      "value": 5007
+     }
+    ],
+    "http.title": [
+     {
+      "value": "400 Bad Request",
+      "count": 1204
+     },
+     {
+      "value": "BB-ST165 Network Camera",
+      "count": 35
+     },
+     {
+      "value": "401 Unauthorized",
+      "count": 28
+     },
+     {
+      "value": "BB-SW172 Network Camera",
+      "count": 23
+     },
+     {
+      "value": "401 Authorization Required",
+      "count": 20
+     },
+     {
+      "value": "(other titles, redacted)",
+      "count": 3907
+     }
+    ]
+   },
+   "note": null
+  },
+  "melsec_jp_r16": {
+   "query": "port:5006,5007 -tag:cloud -tag:honeypot country:JP after:25/10/2026",
+   "case": "国内PLC(三菱)",
+   "confidence": "check",
+   "queried_at": "2026-11-10T22:10:09+0900",
+   "total": 11775,
+   "facets": {},
+   "note": null
+  },
+  "omron_fins_world": {
+   "query": "port:9600 OMRON -tag:cloud -tag:honeypot",
+   "case": "国内PLC(オムロン)",
+   "confidence": "check",
+   "queried_at": "2026-11-10T22:10:11+0900",
+   "total": 0,
+   "facets": {
+    "country": []
+   },
+   "note": null,
+   "jp_count": null,
+   "jp_rank": null
+  },
+  "omron_fins_jp": {
+   "query": "port:9600 OMRON -tag:cloud -tag:honeypot country:JP",
+   "case": "国内PLC(オムロン)",
+   "confidence": "check",
+   "queried_at": "2026-11-10T22:10:12+0900",
+   "total": 0,
+   "facets": {
+    "product": [],
+    "tag": [],
+    "port": [],
+    "http.title": []
+   },
+   "note": null
+  },
+  "omron_fins_jp_r16": {
+   "query": "port:9600 OMRON -tag:cloud -tag:honeypot country:JP after:25/10/2026",
+   "case": "国内PLC(オムロン)",
+   "confidence": "check",
+   "queried_at": "2026-11-10T22:10:14+0900",
+   "total": 0,
+   "facets": {},
+   "note": null
+  },
+  "dnp3_world": {
+   "query": "port:20000 -tag:cloud -tag:honeypot",
+   "case": "電力・水道のRTU",
+   "confidence": "check",
+   "queried_at": "2026-11-10T22:10:15+0900",
+   "total": 1012321,
+   "facets": {
+    "country": [
+     {
+      "count": 242291,
+      "value": "US"
+     },
+     {
+      "count": 231364,
+      "value": "CN"
+     },
+     {
+      "count": 192103,
+      "value": "SG"
+     },
+     {
+      "count": 78480,
+      "value": "GB"
+     },
+     {
+      "count": 49346,
+      "value": "IL"
+     },
+     {
+      "count": 29074,
+      "value": "DE"
+     },
+     {
+      "count": 19623,
+      "value": "HK"
+     },
+     {
+      "count": 19081,
+      "value": "CA"
+     },
+     {
+      "count": 14981,
+      "value": "JP"
+     },
+     {
+      "count": 13979,
+      "value": "CH"
+     },
+     {
+      "count": 12475,
+      "value": "UA"
+     },
+     {
+      "count": 11696,
+      "value": "FR"
+     },
+     {
+      "count": 11662,
+      "value": "NL"
+     },
+     {
+      "count": 8152,
+      "value": "KR"
+     },
+     {
+      "count": 5999,
+      "value": "VN"
+     },
+     {
+      "count": 5597,
+      "value": "BR"
+     },
+     {
+      "count": 4391,
+      "value": "TH"
+     },
+     {
+      "count": 3770,
+      "value": "ID"
+     },
+     {
+      "count": 3740,
+      "value": "IT"
+     },
+     {
+      "count": 3659,
+      "value": "ES"
+     },
+     {
+      "count": 3465,
+      "value": "ZA"
+     },
+     {
+      "count": 3009,
+      "value": "IN"
+     },
+     {
+      "count": 2836,
+      "value": "TW"
+     },
+     {
+      "count": 2605,
+      "value": "PL"
+     },
+     {
+      "count": 2215,
+      "value": "MY"
+     },
+     {
+      "count": 2100,
+      "value": "TR"
+     },
+     {
+      "count": 1971,
+      "value": "AU"
+     },
+     {
+      "count": 1927,
+      "value": "AE"
+     },
+     {
+      "count": 1744,
+      "value": "MX"
+     },
+     {
+      "count": 1731,
+      "value": "PH"
+     },
+     {
+      "count": 1708,
+      "value": "SE"
+     },
+     {
+      "count": 1576,
+      "value": "RO"
+     },
+     {
+      "count": 1505,
+      "value": "FI"
+     },
+     {
+      "count": 1312,
+      "value": "AR"
+     },
+     {
+      "count": 1207,
+      "value": "CL"
+     },
+     {
+      "count": 1171,
+      "value": "SA"
+     },
+     {
+      "count": 1168,
+      "value": "BG"
+     },
+     {
+      "count": 1157,
+      "value": "RS"
+     },
+     {
+      "count": 982,
+      "value": "LT"
+     },
+     {
+      "count": 950,
+      "value": "AT"
+     },
+     {
+      "count": 939,
+      "value": "CZ"
+     },
+     {
+      "count": 743,
+      "value": "MD"
+     },
+     {
+      "count": 707,
+      "value": "MA"
+     },
+     {
+      "count": 644,
+      "value": "IR"
+     },
+     {
+      "count": 613,
+      "value": "KH"
+     },
+     {
+      "count": 578,
+      "value": "RU"
+     },
+     {
+      "count": 488,
+      "value": "HU"
+     },
+     {
+      "count": 432,
+      "value": "BD"
+     },
+     {
+      "count": 413,
+      "value": "BE"
+     },
+     {
+      "count": 387,
+      "value": "KE"
+     }
+    ]
+   },
+   "note": null,
+   "jp_count": 14981,
+   "jp_rank": 9
+  },
+  "dnp3_jp": {
+   "query": "port:20000 -tag:cloud -tag:honeypot country:JP",
+   "case": "電力・水道のRTU",
+   "confidence": "check",
+   "queried_at": "2026-11-10T22:10:16+0900",
+   "total": 14981,
+   "facets": {
+    "product": [
+     {
+      "count": 4480,
+      "value": "nginx"
+     },
+     {
+      "count": 120,
+      "value": "Ncat http proxy"
+     },
+     {
+      "count": 77,
+      "value": "OpenSSH"
+     },
+     {
+      "count": 26,
+      "value": "Jetty"
+     },
+     {
+      "count": 10,
+      "value": "PDR M800"
+     },
+     {
+      "count": 4,
+      "value": "ProFTPD"
+     },
+     {
+      "count": 3,
+      "value": "Enterasys XSR Security Router telnetd"
+     },
+     {
+      "count": 3,
+      "value": "VNC"
+     },
+     {
+      "count": 3,
+      "value": "ZeroMQ Message Transport Protocol"
+     },
+     {
+      "count": 2,
+      "value": "Webmin"
+     },
+     {
+      "count": 1,
+      "value": "Dahua DHI-NVR4116HS-4KS2"
+     },
+     {
+      "count": 1,
+      "value": "Dahua NVR16-P(8TB)(NVR5416-16P-EI)"
+     },
+     {
+      "count": 1,
+      "value": "Dahua-based DHI-ASI7213Y-V3-T1"
+     },
+     {
+      "count": 1,
+      "value": "Microsoft ftpd"
+     },
+     {
+      "count": 1,
+      "value": "Minecraft"
+     }
+    ],
+    "tag": [
+     {
+      "count": 504,
+      "value": "cdn"
+     },
+     {
+      "count": 236,
+      "value": "eol-product"
+     },
+     {
+      "count": 12,
+      "value": "proxy"
+     },
+     {
+      "count": 11,
+      "value": "self-signed"
+     },
+     {
+      "count": 8,
+      "value": "ics"
+     },
+     {
+      "count": 1,
+      "value": "database"
+     },
+     {
+      "count": 1,
+      "value": "videogame"
+     }
+    ],
+    "port": [
+     {
+      "count": 14981,
+      "value": 20000
+     }
+    ],
+    "http.title": [
+     {
+      "value": "401 Unauthorized",
+      "count": 67
+     },
+     {
+      "value": "Error",
+      "count": 40
+     },
+     {
+      "value": "497",
+      "count": 5
+     },
+     {
+      "value": "Login",
+      "count": 5
+     },
+     {
+      "value": "400 Bad Request",
+      "count": 3
+     },
+     {
+      "value": "Redirecting...",
+      "count": 3
+     },
+     {
+      "value": "(other titles, redacted)",
+      "count": 16
+     }
+    ]
+   },
+   "note": null
+  },
+  "dnp3_jp_r16": {
+   "query": "port:20000 -tag:cloud -tag:honeypot country:JP after:25/10/2026",
+   "case": "電力・水道のRTU",
+   "confidence": "check",
+   "queried_at": "2026-11-10T22:10:18+0900",
+   "total": 10560,
+   "facets": {},
+   "note": null
+  },
+  "atg_world": {
+   "query": "\"I20100\" port:10001 -tag:cloud -tag:honeypot",
+   "case": "ATG(B8・B10)",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:10:20+0900",
+   "total": 3115,
+   "facets": {
+    "country": [
+     {
+      "count": 1406,
+      "value": "US"
+     },
+     {
+      "count": 359,
+      "value": "CN"
+     },
+     {
+      "count": 333,
+      "value": "BR"
+     },
+     {
+      "count": 119,
+      "value": "ES"
+     },
+     {
+      "count": 101,
+      "value": "CA"
+     },
+     {
+      "count": 101,
+      "value": "PR"
+     },
+     {
+      "count": 100,
+      "value": "AU"
+     },
+     {
+      "count": 67,
+      "value": "DE"
+     },
+     {
+      "count": 32,
+      "value": "FR"
+     },
+     {
+      "count": 31,
+      "value": "GB"
+     },
+     {
+      "count": 29,
+      "value": "MX"
+     },
+     {
+      "count": 28,
+      "value": "IT"
+     },
+     {
+      "count": 24,
+      "value": "PK"
+     },
+     {
+      "count": 24,
+      "value": "TH"
+     },
+     {
+      "count": 20,
+      "value": "BE"
+     },
+     {
+      "count": 16,
+      "value": "BD"
+     },
+     {
+      "count": 16,
+      "value": "TW"
+     },
+     {
+      "count": 15,
+      "value": "ID"
+     },
+     {
+      "count": 15,
+      "value": "PA"
+     },
+     {
+      "count": 14,
+      "value": "IE"
+     },
+     {
+      "count": 11,
+      "value": "JP"
+     },
+     {
+      "count": 11,
+      "value": "NI"
+     },
+     {
+      "count": 11,
+      "value": "NZ"
+     },
+     {
+      "count": 11,
+      "value": "PE"
+     },
+     {
+      "count": 10,
+      "value": "AR"
+     },
+     {
+      "count": 10,
+      "value": "KR"
+     },
+     {
+      "count": 10,
+      "value": "NL"
+     },
+     {
+      "count": 9,
+      "value": "CO"
+     },
+     {
+      "count": 9,
+      "value": "CZ"
+     },
+     {
+      "count": 9,
+      "value": "PH"
+     },
+     {
+      "count": 9,
+      "value": "PL"
+     },
+     {
+      "count": 8,
+      "value": "UG"
+     },
+     {
+      "count": 7,
+      "value": "AE"
+     },
+     {
+      "count": 7,
+      "value": "IN"
+     },
+     {
+      "count": 7,
+      "value": "MA"
+     },
+     {
+      "count": 7,
+      "value": "SG"
+     },
+     {
+      "count": 7,
+      "value": "UA"
+     },
+     {
+      "count": 6,
+      "value": "HK"
+     },
+     {
+      "count": 6,
+      "value": "HU"
+     },
+     {
+      "count": 6,
+      "value": "MY"
+     },
+     {
+      "count": 5,
+      "value": "SA"
+     },
+     {
+      "count": 5,
+      "value": "UY"
+     },
+     {
+      "count": 4,
+      "value": "BG"
+     },
+     {
+      "count": 4,
+      "value": "IL"
+     },
+     {
+      "count": 4,
+      "value": "KZ"
+     },
+     {
+      "count": 4,
+      "value": "RE"
+     },
+     {
+      "count": 4,
+      "value": "ZA"
+     },
+     {
+      "count": 3,
+      "value": "EC"
+     },
+     {
+      "count": 3,
+      "value": "JM"
+     },
+     {
+      "count": 3,
+      "value": "KH"
+     }
+    ]
+   },
+   "note": null,
+   "jp_count": 11,
+   "jp_rank": 21
+  },
+  "atg_jp": {
+   "query": "\"I20100\" port:10001 -tag:cloud -tag:honeypot country:JP",
+   "case": "ATG(B8・B10)",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:10:21+0900",
+   "total": 11,
+   "facets": {
+    "product": [
+     {
+      "count": 4,
+      "value": "Cisco router telnetd"
+     }
+    ],
+    "tag": [],
+    "port": [
+     {
+      "count": 11,
+      "value": 10001
+     }
+    ],
+    "http.title": []
+   },
+   "note": null
+  },
+  "atg_jp_r16": {
+   "query": "\"I20100\" port:10001 -tag:cloud -tag:honeypot country:JP after:25/10/2026",
+   "case": "ATG(B8・B10)",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:10:23+0900",
+   "total": 9,
+   "facets": {},
+   "note": null
+  },
+  "moxa_nport_world": {
+   "query": "\"NPort\" -tag:cloud -tag:honeypot",
+   "case": "ポーランド2025-12(B9)",
+   "confidence": "check",
+   "queried_at": "2026-11-10T22:10:24+0900",
+   "total": 3520,
+   "facets": {
+    "country": [
+     {
+      "count": 1130,
+      "value": "RU"
+     },
+     {
+      "count": 410,
+      "value": "US"
+     },
+     {
+      "count": 337,
+      "value": "TW"
+     },
+     {
+      "count": 126,
+      "value": "DE"
+     },
+     {
+      "count": 114,
+      "value": "PL"
+     },
+     {
+      "count": 108,
+      "value": "BR"
+     },
+     {
+      "count": 99,
+      "value": "ES"
+     },
+     {
+      "count": 94,
+      "value": "CN"
+     },
+     {
+      "count": 79,
+      "value": "DK"
+     },
+     {
+      "count": 61,
+      "value": "KR"
+     },
+     {
+      "count": 52,
+      "value": "RO"
+     },
+     {
+      "count": 51,
+      "value": "SK"
+     },
+     {
+      "count": 49,
+      "value": "FR"
+     },
+     {
+      "count": 43,
+      "value": "GB"
+     },
+     {
+      "count": 41,
+      "value": "HU"
+     },
+     {
+      "count": 39,
+      "value": "CA"
+     },
+     {
+      "count": 36,
+      "value": "CZ"
+     },
+     {
+      "count": 35,
+      "value": "NL"
+     },
+     {
+      "count": 34,
+      "value": "IT"
+     },
+     {
+      "count": 32,
+      "value": "UA"
+     },
+     {
+      "count": 31,
+      "value": "FI"
+     },
+     {
+      "count": 29,
+      "value": "AT"
+     },
+     {
+      "count": 25,
+      "value": "LT"
+     },
+     {
+      "count": 25,
+      "value": "PT"
+     },
+     {
+      "count": 22,
+      "value": "HR"
+     },
+     {
+      "count": 21,
+      "value": "BE"
+     },
+     {
+      "count": 21,
+      "value": "GR"
+     },
+     {
+      "count": 20,
+      "value": "JO"
+     },
+     {
+      "count": 17,
+      "value": "BY"
+     },
+     {
+      "count": 17,
+      "value": "JP"
+     },
+     {
+      "count": 17,
+      "value": "MX"
+     },
+     {
+      "count": 16,
+      "value": "CL"
+     },
+     {
+      "count": 15,
+      "value": "HK"
+     },
+     {
+      "count": 15,
+      "value": "TR"
+     },
+     {
+      "count": 14,
+      "value": "CO"
+     },
+     {
+      "count": 14,
+      "value": "EE"
+     },
+     {
+      "count": 13,
+      "value": "KZ"
+     },
+     {
+      "count": 13,
+      "value": "SE"
+     },
+     {
+      "count": 11,
+      "value": "AR"
+     },
+     {
+      "count": 11,
+      "value": "MY"
+     },
+     {
+      "count": 10,
+      "value": "AU"
+     },
+     {
+      "count": 9,
+      "value": "EC"
+     },
+     {
+      "count": 9,
+      "value": "NO"
+     },
+     {
+      "count": 8,
+      "value": "LV"
+     },
+     {
+      "count": 8,
+      "value": "SG"
+     },
+     {
+      "count": 8,
+      "value": "SI"
+     },
+     {
+      "count": 8,
+      "value": "TH"
+     },
+     {
+      "count": 8,
+      "value": "VN"
+     },
+     {
+      "count": 7,
+      "value": "BG"
+     },
+     {
+      "count": 7,
+      "value": "PE"
+     }
+    ]
+   },
+   "note": null,
+   "jp_count": 17,
+   "jp_rank": 30
+  },
+  "moxa_nport_jp": {
+   "query": "\"NPort\" -tag:cloud -tag:honeypot country:JP",
+   "case": "ポーランド2025-12(B9)",
+   "confidence": "check",
+   "queried_at": "2026-11-10T22:10:26+0900",
+   "total": 17,
+   "facets": {
+    "product": [
+     {
+      "count": 5,
+      "value": "MoxaHttp"
+     },
+     {
+      "count": 3,
+      "value": "Java Message Service"
+     },
+     {
+      "count": 2,
+      "value": "Moxa Nport"
+     },
+     {
+      "count": 1,
+      "value": "7 Days to Die"
+     }
+    ],
+    "tag": [
+     {
+      "count": 2,
+      "value": "ics"
+     }
+    ],
+    "port": [
+     {
+      "count": 5,
+      "value": 23
+     },
+     {
+      "count": 4,
+      "value": 50000
+     },
+     {
+      "count": 3,
+      "value": 7676
+     },
+     {
+      "count": 2,
+      "value": 4800
+     },
+     {
+      "count": 1,
+      "value": 443
+     },
+     {
+      "count": 1,
+      "value": 8085
+     },
+     {
+      "count": 1,
+      "value": 27015
+     }
+    ],
+    "http.title": [
+     {
+      "value": "(other titles, redacted)",
+      "count": 1
+     }
+    ]
+   },
+   "note": null
+  },
+  "moxa_nport_jp_r16": {
+   "query": "\"NPort\" -tag:cloud -tag:honeypot country:JP after:25/10/2026",
+   "case": "ポーランド2025-12(B9)",
+   "confidence": "check",
+   "queried_at": "2026-11-10T22:10:27+0900",
+   "total": 14,
+   "facets": {},
+   "note": null
+  },
+  "solarview_world": {
+   "query": "http.title:\"SolarView\" -tag:cloud -tag:honeypot",
+   "case": "SolarView(B1・E1)",
+   "confidence": "check",
+   "queried_at": "2026-11-10T22:10:29+0900",
+   "total": 97,
+   "facets": {
+    "country": [
+     {
+      "count": 91,
+      "value": "DE"
+     },
+     {
+      "count": 1,
+      "value": "AT"
+     },
+     {
+      "count": 1,
+      "value": "FI"
+     },
+     {
+      "count": 1,
+      "value": "HK"
+     },
+     {
+      "count": 1,
+      "value": "NL"
+     },
+     {
+      "count": 1,
+      "value": "SE"
+     },
+     {
+      "count": 1,
+      "value": "TH"
+     }
+    ]
+   },
+   "note": null,
+   "jp_count": null,
+   "jp_rank": null
+  },
+  "solarview_jp": {
+   "query": "http.title:\"SolarView\" -tag:cloud -tag:honeypot country:JP",
+   "case": "SolarView(B1・E1)",
+   "confidence": "check",
+   "queried_at": "2026-11-10T22:10:31+0900",
+   "total": 0,
+   "facets": {
+    "product": [],
+    "tag": [],
+    "port": [],
+    "http.title": []
+   },
+   "note": null
+  },
+  "solarview_jp_r16": {
+   "query": "http.title:\"SolarView\" -tag:cloud -tag:honeypot country:JP after:25/10/2026",
+   "case": "SolarView(B1・E1)",
+   "confidence": "check",
+   "queried_at": "2026-11-10T22:10:32+0900",
+   "total": 0,
+   "facets": {},
+   "note": null
+  },
+  "storeview_world": {
+   "query": "http.title:\"StoreView\" -tag:cloud -tag:honeypot",
+   "case": "冷蔵(C7)",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:10:34+0900",
+   "total": 5345,
+   "facets": {
+    "country": [
+     {
+      "count": 1585,
+      "value": "NL"
+     },
+     {
+      "count": 1052,
+      "value": "ZA"
+     },
+     {
+      "count": 820,
+      "value": "FR"
+     },
+     {
+      "count": 388,
+      "value": "HK"
+     },
+     {
+      "count": 221,
+      "value": "CN"
+     },
+     {
+      "count": 183,
+      "value": "SG"
+     },
+     {
+      "count": 148,
+      "value": "LV"
+     },
+     {
+      "count": 109,
+      "value": "ES"
+     },
+     {
+      "count": 96,
+      "value": "US"
+     },
+     {
+      "count": 92,
+      "value": "BE"
+     },
+     {
+      "count": 87,
+      "value": "PL"
+     },
+     {
+      "count": 61,
+      "value": "SE"
+     },
+     {
+      "count": 60,
+      "value": "RO"
+     },
+     {
+      "count": 58,
+      "value": "DK"
+     },
+     {
+      "count": 48,
+      "value": "PT"
+     },
+     {
+      "count": 36,
+      "value": "AU"
+     },
+     {
+      "count": 32,
+      "value": "TR"
+     },
+     {
+      "count": 27,
+      "value": "DE"
+     },
+     {
+      "count": 21,
+      "value": "NO"
+     },
+     {
+      "count": 20,
+      "value": "KZ"
+     },
+     {
+      "count": 15,
+      "value": "BR"
+     },
+     {
+      "count": 15,
+      "value": "CH"
+     },
+     {
+      "count": 13,
+      "value": "FI"
+     },
+     {
+      "count": 13,
+      "value": "MX"
+     },
+     {
+      "count": 11,
+      "value": "PH"
+     },
+     {
+      "count": 9,
+      "value": "ID"
+     },
+     {
+      "count": 9,
+      "value": "UA"
+     },
+     {
+      "count": 8,
+      "value": "MQ"
+     },
+     {
+      "count": 8,
+      "value": "MY"
+     },
+     {
+      "count": 7,
+      "value": "GB"
+     },
+     {
+      "count": 6,
+      "value": "IS"
+     },
+     {
+      "count": 6,
+      "value": "IT"
+     },
+     {
+      "count": 6,
+      "value": "MU"
+     },
+     {
+      "count": 5,
+      "value": "TN"
+     },
+     {
+      "count": 4,
+      "value": "GR"
+     },
+     {
+      "count": 4,
+      "value": "JP"
+     },
+     {
+      "count": 4,
+      "value": "LU"
+     },
+     {
+      "count": 4,
+      "value": "NA"
+     },
+     {
+      "count": 4,
+      "value": "TH"
+     },
+     {
+      "count": 3,
+      "value": "CO"
+     },
+     {
+      "count": 3,
+      "value": "RE"
+     },
+     {
+      "count": 3,
+      "value": "SI"
+     },
+     {
+      "count": 2,
+      "value": "AT"
+     },
+     {
+      "count": 2,
+      "value": "BA"
+     },
+     {
+      "count": 2,
+      "value": "BG"
+     },
+     {
+      "count": 2,
+      "value": "CL"
+     },
+     {
+      "count": 2,
+      "value": "GI"
+     },
+     {
+      "count": 2,
+      "value": "IL"
+     },
+     {
+      "count": 2,
+      "value": "KR"
+     },
+     {
+      "count": 2,
+      "value": "MA"
+     }
+    ]
+   },
+   "note": null,
+   "jp_count": 4,
+   "jp_rank": 36
+  },
+  "storeview_jp": {
+   "query": "http.title:\"StoreView\" -tag:cloud -tag:honeypot country:JP",
+   "case": "冷蔵(C7)",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:10:35+0900",
+   "total": 4,
+   "facets": {
+    "product": [
+     {
+      "count": 3,
+      "value": "nginx"
+     }
+    ],
+    "tag": [],
+    "port": [
+     {
+      "count": 1,
+      "value": 80
+     },
+     {
+      "count": 1,
+      "value": 3072
+     },
+     {
+      "count": 1,
+      "value": 8080
+     },
+     {
+      "count": 1,
+      "value": 44333
+     }
+    ],
+    "http.title": [
+     {
+      "value": "Danfoss StoreView",
+      "count": 3
+     },
+     {
+      "value": "StoreView - Login",
+      "count": 1
+     }
+    ]
+   },
+   "note": null
+  },
+  "storeview_jp_r16": {
+   "query": "http.title:\"StoreView\" -tag:cloud -tag:honeypot country:JP after:25/10/2026",
+   "case": "冷蔵(C7)",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:10:37+0900",
+   "total": 3,
+   "facets": {},
+   "note": null
+  },
+  "xweb_world": {
+   "query": "http.title:\"XWEB\" -tag:cloud -tag:honeypot",
+   "case": "冷蔵(C7)",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:10:39+0900",
+   "total": 7884,
+   "facets": {
+    "country": [
+     {
+      "count": 2455,
+      "value": "IT"
+     },
+     {
+      "count": 1427,
+      "value": "GR"
+     },
+     {
+      "count": 960,
+      "value": "IL"
+     },
+     {
+      "count": 317,
+      "value": "CZ"
+     },
+     {
+      "count": 286,
+      "value": "SK"
+     },
+     {
+      "count": 191,
+      "value": "BE"
+     },
+     {
+      "count": 165,
+      "value": "JP"
+     },
+     {
+      "count": 162,
+      "value": "CA"
+     },
+     {
+      "count": 145,
+      "value": "HU"
+     },
+     {
+      "count": 145,
+      "value": "NL"
+     },
+     {
+      "count": 138,
+      "value": "TR"
+     },
+     {
+      "count": 136,
+      "value": "IS"
+     },
+     {
+      "count": 128,
+      "value": "ES"
+     },
+     {
+      "count": 125,
+      "value": "BG"
+     },
+     {
+      "count": 119,
+      "value": "US"
+     },
+     {
+      "count": 118,
+      "value": "BR"
+     },
+     {
+      "count": 93,
+      "value": "DE"
+     },
+     {
+      "count": 83,
+      "value": "FR"
+     },
+     {
+      "count": 74,
+      "value": "GB"
+     },
+     {
+      "count": 67,
+      "value": "RO"
+     },
+     {
+      "count": 58,
+      "value": "PL"
+     },
+     {
+      "count": 46,
+      "value": "AT"
+     },
+     {
+      "count": 39,
+      "value": "UA"
+     },
+     {
+      "count": 35,
+      "value": "SE"
+     },
+     {
+      "count": 30,
+      "value": "KZ"
+     },
+     {
+      "count": 26,
+      "value": "TH"
+     },
+     {
+      "count": 21,
+      "value": "SI"
+     },
+     {
+      "count": 20,
+      "value": "IE"
+     },
+     {
+      "count": 20,
+      "value": "PH"
+     },
+     {
+      "count": 20,
+      "value": "VN"
+     },
+     {
+      "count": 19,
+      "value": "ZA"
+     },
+     {
+      "count": 18,
+      "value": "SG"
+     },
+     {
+      "count": 16,
+      "value": "LT"
+     },
+     {
+      "count": 15,
+      "value": "AU"
+     },
+     {
+      "count": 15,
+      "value": "MY"
+     },
+     {
+      "count": 13,
+      "value": "AR"
+     },
+     {
+      "count": 12,
+      "value": "MD"
+     },
+     {
+      "count": 11,
+      "value": "AL"
+     },
+     {
+      "count": 11,
+      "value": "HK"
+     },
+     {
+      "count": 11,
+      "value": "TW"
+     },
+     {
+      "count": 9,
+      "value": "KR"
+     },
+     {
+      "count": 9,
+      "value": "PT"
+     },
+     {
+      "count": 6,
+      "value": "CL"
+     },
+     {
+      "count": 6,
+      "value": "CO"
+     },
+     {
+      "count": 6,
+      "value": "IN"
+     },
+     {
+      "count": 6,
+      "value": "NA"
+     },
+     {
+      "count": 5,
+      "value": "CY"
+     },
+     {
+      "count": 4,
+      "value": "ID"
+     },
+     {
+      "count": 4,
+      "value": "RU"
+     },
+     {
+      "count": 3,
+      "value": "CN"
+     }
+    ]
+   },
+   "note": null,
+   "jp_count": 165,
+   "jp_rank": 7
+  },
+  "xweb_jp": {
+   "query": "http.title:\"XWEB\" -tag:cloud -tag:honeypot country:JP",
+   "case": "冷蔵(C7)",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:10:41+0900",
+   "total": 165,
+   "facets": {
+    "product": [
+     {
+      "count": 1,
+      "value": "Apache httpd"
+     }
+    ],
+    "tag": [
+     {
+      "count": 3,
+      "value": "self-signed"
+     }
+    ],
+    "port": [
+     {
+      "count": 2,
+      "value": 443
+     },
+     {
+      "count": 1,
+      "value": 21
+     },
+     {
+      "count": 1,
+      "value": 23
+     },
+     {
+      "count": 1,
+      "value": 104
+     },
+     {
+      "count": 1,
+      "value": 452
+     },
+     {
+      "count": 1,
+      "value": 554
+     },
+     {
+      "count": 1,
+      "value": 636
+     },
+     {
+      "count": 1,
+      "value": 675
+     },
+     {
+      "count": 1,
+      "value": 771
+     },
+     {
+      "count": 1,
+      "value": 995
+     },
+     {
+      "count": 1,
+      "value": 1200
+     },
+     {
+      "count": 1,
+      "value": 1311
+     },
+     {
+      "count": 1,
+      "value": 1720
+     },
+     {
+      "count": 1,
+      "value": 1951
+     },
+     {
+      "count": 1,
+      "value": 2008
+     }
+    ],
+    "http.title": [
+     {
+      "value": "XWEB",
+      "count": 164
+     },
+     {
+      "value": "(other titles, redacted)",
+      "count": 1
+     }
+    ]
+   },
+   "note": null
+  },
+  "xweb_jp_r16": {
+   "query": "http.title:\"XWEB\" -tag:cloud -tag:honeypot country:JP after:25/10/2026",
+   "case": "冷蔵(C7)",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:10:42+0900",
+   "total": 165,
+   "facets": {},
+   "note": null
+  },
+  "ics_jp_honeypot": {
+   "query": "tag:ics tag:honeypot country:JP",
+   "case": "除外分",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:10:44+0900",
+   "total": 0,
+   "facets": {},
+   "note": null
+  },
+  "ics_jp_cloud": {
+   "query": "tag:ics tag:cloud country:JP",
+   "case": "除外分",
+   "confidence": "ok",
+   "queried_at": "2026-11-10T22:10:46+0900",
+   "total": 0,
+   "facets": {},
+   "note": null
+  }
+ },
+ "finished_at": "2026-11-10T22:10:47+0900",
+ "sanitized": {
+  "tool": "sanitize_jp.py",
+  "removed": [
+   "asn",
+   "city",
+   "http.favicon.hash",
+   "isp",
+   "org",
+   "region",
+   "ssl.cert.fingerprint",
+   "ssl.cert.issuer.cn",
+   "ssl.cert.serial",
+   "ssl.cert.subject.cn"
+  ],
+  "count_only": [
+   "http.html_hash"
+  ],
+  "titles": "製品名・一般的な画面名以外は (other titles, redacted) にまとめた",
+  "isp_in_queries": "回線事業者名は <ISP-A> などに置き換えた"
+ }
+}
