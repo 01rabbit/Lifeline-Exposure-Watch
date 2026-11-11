@@ -62,6 +62,23 @@ WATCH = [
     ("storeview_world",     f'http.title:"StoreView" {N}'),
 ]
 
+# SolarView のファームウェアの版の分布を、Shodan が既に持っているバナーから数える（機器には接続しない）。
+# product/version は Shodan の判定、"Ver." 系の文字列は画面に表示される版の候補（一致範囲は要確認）。
+SV_VERSIONS = [
+    ("sv_product_jp",     'product:"SolarView Compact" country:JP', [("version", 50), ("http.html_hash", 200), ("port", 10)]),
+    ("sv_product_world",  'product:"SolarView Compact"',            [("version", 50), ("country", 20)]),
+    ("sv_vuln_29303_jp",  'vuln:CVE-2022-29303 country:JP', None),   # 有料プランの一部でのみ使える
+    ("sv_vuln_23333_jp",  'vuln:CVE-2023-23333 country:JP', None),
+    ("sv_has_vuln_jp",    'http.html:"SolarView" country:JP has_vuln:true', None),
+    # 生存者バイアスの確認：版が見えるのは認証なしの画面だけか、認証付き（401）の画面は版が見えないか
+    ("sv_prod_top_jp",    'product:"SolarView Compact" http.title:"Top" country:JP',       [("version", 50)]),
+    ("sv_prod_401_jp",    'product:"SolarView Compact" http.title:"Error 401" country:JP', [("version", 50)]),
+    ("sv_prod_other_jp",  'product:"SolarView Compact" country:JP -http.title:"Top" -http.title:"Error 401"', [("version", 50), ("http.title", 20), ("port", 10)]),
+    ("sv_html_noprod_jp", 'http.html:"SolarView" country:JP -product:"SolarView Compact"', [("http.title", 20), ("product", 10)]),
+    ("sv_prod_r7_jp",     'product:"SolarView Compact" country:JP {r7}', None),
+] + [(f"sv_str_{t.replace('.', '_').replace(' ', '')}", f'http.html:"SolarView" http.html:"{t}" country:JP', None)
+     for t in ["Ver.3.", "Ver.4.", "Ver.5.", "Ver.6.", "Ver.7.", "Ver.8.", "Ver.9.", "Ver 3.", "Ver 4.", "Ver 6.", "Ver 8."]]
+
 # 国内の太陽光・エネルギー監視の画面を、タイトルの集計から洗い出す（内部用。タイトルに発電所名が入ることがある）
 PV_DISCOVER = [
     ("title_hatsuden",  'http.title:"発電" country:JP'),
@@ -89,6 +106,7 @@ def count(api, q, facets=None):
 def main():
     ap = argparse.ArgumentParser(description="主要指標の日次定点観測（Shodan count API のみ）")
     ap.add_argument("-f", "--file", default="daily_watch.jsonl", help="追記先（既定: daily_watch.jsonl）")
+    ap.add_argument("--sv-versions", action="store_true", help="SolarView のファームウェアの版の分布を数える（1回だけ）")
     ap.add_argument("--pv-discover", action="store_true", help="国内の太陽光・エネルギー監視画面のタイトルを探す（内部用）")
     args = ap.parse_args()
 
@@ -98,6 +116,28 @@ def main():
     api = shodan.Shodan(key)
     today = datetime.date.today()
     d1 = f"after:{(today - datetime.timedelta(days=1)).strftime('%d/%m/%Y')}"
+
+    if args.sv_versions:
+        fn = f"sv_versions_{time.strftime('%Y%m%d_%H%M%S')}.json"
+        out = {"tool": "daily_watch --sv-versions", "run_at": time.strftime("%Y-%m-%dT%H:%M:%S%z"), "results": {}}
+        r7 = f"after:{(today - datetime.timedelta(days=7)).strftime('%d/%m/%Y')}"
+        for name, q, fc in SV_VERSIONS:
+            q = q.replace("{r7}", r7)
+            r, err = count(api, q, fc)
+            if r is None:
+                out["results"][name] = {"query": q, "error": err}
+                print(f"{name:22s} ERROR {err}", flush=True)
+            else:
+                f = r.get("facets", {}) or {}
+                if "http.html_hash" in f:   # 値は捨て、件数の分布だけ残す
+                    f["http.html_hash"] = sorted((x["count"] for x in f["http.html_hash"]), reverse=True)
+                out["results"][name] = {"query": q, "total": r["total"], "facets": f}
+                vs = ", ".join(f"{x['value']}:{x['count']}" for x in f.get("version", [])[:8])
+                print(f"{name:22s} {r['total']:>6}  {vs}", flush=True)
+            time.sleep(1.1)
+        json.dump(out, open(fn, "w"), ensure_ascii=False, indent=1)
+        print(f"保存しました: {fn}")
+        return
 
     if args.pv_discover:
         fn = f"pv_discover_{time.strftime('%Y%m%d_%H%M%S')}.json"

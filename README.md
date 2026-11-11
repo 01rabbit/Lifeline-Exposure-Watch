@@ -23,7 +23,8 @@
 | `lifeline_exposure.py` | 計測スクリプト。4つのモードがある（下表） |
 | `sanitize_for_publication.py` | 計測結果から回線事業者名・都市・証明書・HTML ハッシュの値を取り除き、公開できる形にする |
 | `daily_watch.py` | 主要な23〜27指標を毎日1回数え、JSONL に追記する定点観測用。ファセットを取らないので記録はそのまま公開できる |
-| `scheduler/` | `daily_watch.py` を macOS の launchd で毎朝自動実行する設定スクリプト（API キーはキーチェーンに保存） |
+| `scheduler/` | `daily_watch.py` を macOS の launchd で自動実行する設定スクリプト。毎朝の定点観測と、週1回の SolarView の版の集計（API キーはキーチェーンに保存） |
+| `detection/solarview.rules` | SolarView を守る側のための Suricata ルールの例（入口の保守用画面へのアクセスと、侵入後の振る舞い）。Suricata 7.0.3 で構文と動作を確認 |
 | `data/` | 記事の計測（2026-11-10）の結果。公開用に加工済み |
 
 | モード | 問い合わせ数 | 内容 |
@@ -64,10 +65,11 @@ python3 sanitize_for_publication.py jp_ot_round3_*.json -d public/
 ```bash
 cd scheduler
 bash install_macos.sh     # ~/lifeline-watch に設置し、毎朝 7:13 に実行
-bash uninstall_macos.sh   # 自動実行を止め、キーチェーンの API キーを削除
+bash install_weekly_sv_macos.sh   # SolarView の版の分布を毎週月曜 7:31 に集計（任意）
+bash uninstall_macos.sh   # 自動実行をすべて止め、キーチェーンの API キーを削除
 ```
 
-記録は `~/lifeline-watch/daily_watch.jsonl` に1日1行ずつたまります。
+記録は `~/lifeline-watch/daily_watch.jsonl` に1日1行ずつ、版の集計は `~/lifeline-watch/sv_versions/` に週1ファイルずつたまります。
 
 ## 結果の読み方
 
@@ -77,7 +79,8 @@ bash uninstall_macos.sh   # 自動実行を止め、キーチェーンの API �
 - **おとり（ハニーポット）が混じる。** Shodan の `honeypot` タグでは除外できないものがあります。単一のホスティング事業者に集中し、多数のポートに1件ずつ散らばり、TLS がほとんどない、という特徴がそろうものは、おとりの可能性が高いと見ています。
 - **応答の種類まで確かめる。** BACnet（47808番）は日本で1,895件が応答しましたが、BACnet の識別子（Instance ID）を含むものは4件でした。
 - **露出していることは、脆弱であることや侵害されたことを意味しない。**
-- **過去との比較はできない。** Shodan は各機器の最新の応答だけを持つため、`after:` で分かるのは「最後に観測された時期」です。
+- **Shodan だけでは過去と比べにくい。** Shodan は各機器の最新の応答を中心に持つため、`after:` で分かるのは「最後に観測された時期」です。推移を見るには、このツールの定点観測を続けるか、Shadowserver のような時系列の集計と照らし合わせてください。
+- **観測サービスによって件数が大きく違う。** 記事の計測では、SolarView（日本）は Shodan の製品判定で2,806件、Shadowserver の機器単位で191件でした。
 
 ## 倫理と注意
 

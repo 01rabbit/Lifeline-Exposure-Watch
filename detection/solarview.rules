@@ -1,0 +1,27 @@
+# SolarView Compact を守る側のための検知ルール例（Suricata 7）
+#
+# 前提：$SOLARVIEW に、守る対象の SolarView の IP アドレス（またはその前のルーターの内側アドレス）を設定する。
+#   suricata.yaml の vars: address-groups: に  SOLARVIEW: "[192.0.2.10]"  のように追加する。
+# 方針：攻撃の文字列の細部ではなく、「普段は保守の人しか触らない画面に外から触られた」
+#       「監視機器が普段しない通信を始めた」という振る舞いで見る。
+# sid は 9,000,000 番台の私的な範囲を使っている。自組織の採番に合わせて変えること。
+
+# --- 入口：狙われやすい管理用 PHP への外部からのアクセス -----------------------------
+# conf_mail.php（CVE-2022-29303）、downloader.php（CVE-2023-23333）、network_test.php（CVE-2022-40881）、
+# texteditor.php（CVE-2023-29919）はいずれも保守用の画面で、外部から触られる理由はほぼない。
+alert http $EXTERNAL_NET any -> $SOLARVIEW any (msg:"SolarView 保守用PHPへの外部からのアクセス"; flow:established,to_server; http.uri; content:".php"; nocase; pcre:"/\/(conf_mail|downloader|network_test|texteditor)\.php/i"; classtype:attempted-admin; sid:9100001; rev:1;)
+
+# 同じ画面への要求に、シェルの区切り記号（; | ` $( ）が入っている。URI と POST 本文の両方を見る。
+alert http $EXTERNAL_NET any -> $SOLARVIEW any (msg:"SolarView 保守用PHPへのシェル記号を含む要求（URI）"; flow:established,to_server; http.uri; pcre:"/\/(conf_mail|downloader|network_test|texteditor)\.php.*(%3b|\;|%7c|\||%60|`|%24%28|\$\()/i"; classtype:web-application-attack; sid:9100002; rev:1;)
+alert http $EXTERNAL_NET any -> $SOLARVIEW any (msg:"SolarView 保守用PHPへのシェル記号を含む要求（本文）"; flow:established,to_server; http.uri; pcre:"/\/(conf_mail|downloader|network_test|texteditor)\.php/i"; http.request_body; pcre:"/(%3b|\;|%7c|\||%60|`|%24%28|\$\()/i"; classtype:web-application-attack; sid:9100003; rev:1;)
+
+# --- 侵入後：監視機器が普段しない動きを始めた -----------------------------------------
+# 監視機器が外部から実行ファイル（ELF）を受け取った。ボットやバックドアの設置で典型的に起きる。
+alert http $EXTERNAL_NET any -> $SOLARVIEW any (msg:"SolarView が外部から実行ファイルを受信"; flow:established,to_client; file.data; content:"|7F 45 4C 46|"; startswith; classtype:trojan-activity; sid:9100011; rev:1;)
+
+# 監視機器から wget / curl などのダウンロード用ツールの通信が出た。
+alert http $SOLARVIEW any -> $EXTERNAL_NET any (msg:"SolarView からダウンロード用ツールの通信"; flow:established,to_server; http.user_agent; pcre:"/^(wget|curl|busybox|python-requests)/i"; classtype:trojan-activity; sid:9100012; rev:1;)
+
+# 監視機器が短時間に多数の外向き接続を始めた（踏み台・プロキシとしての悪用を疑う）。
+# しきい値（60秒に30回）は、普段の通信（メール通知、NTP、クラウド送信など）を見てから調整する。
+alert tcp $SOLARVIEW any -> $EXTERNAL_NET any (msg:"SolarView から短時間に多数の外向き接続（踏み台化の疑い）"; flow:to_server; flags:S,12; threshold:type threshold, track by_src, count 30, seconds 60; classtype:trojan-activity; sid:9100013; rev:1;)
