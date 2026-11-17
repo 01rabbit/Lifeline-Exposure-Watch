@@ -25,6 +25,7 @@
 | `daily_watch.py` | 主要な23〜27指標を毎日1回数え、JSONL に追記する定点観測用。ファセットを取らないので記録はそのまま公開できる |
 | `scheduler/` | `daily_watch.py` を macOS の launchd で自動実行する設定スクリプト。毎朝の定点観測と、週1回の SolarView の版の集計（API キーはキーチェーンに保存） |
 | `detection/solarview.rules` | SolarView を守る側のための Suricata ルールの例（入口の保守用画面へのアクセスと、侵入後の振る舞い）。Suricata 7.0.3 で構文と動作を確認 |
+| `detection/xweb.rules` | Copeland（旧 Dixell）XWEB EVO を守る側のための Suricata ルールの例（`xwconsole.cgi`・`config.lua` への外部からのアクセスと、侵入後の振る舞い）。2026-11 公表の CVE-2026-124010／124014 を受けて追加 |
 | `data/` | 記事の計測（2026-11-10）の結果。公開用に加工済み |
 
 | モード | 問い合わせ数 | 内容 |

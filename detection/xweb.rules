@@ -1,0 +1,19 @@
+# Copeland（旧 Dixell）XWEB EVO を守る側のための検知ルール例（Suricata 7）
+#
+# 前提：$XWEB に、守る対象の XWEB EVO の IP アドレス（またはその前のルーターの内側アドレス）を設定する。
+#   suricata.yaml の vars: address-groups: に  XWEB: "[192.0.2.20]"  のように追加する。
+# 背景：2026-11-12 に VulnCheck が14件の脆弱性を公表。XWEB EVO は 2026-03 にサポートが終了しており、
+#       最新の 5.8.8 にも修正されない脆弱性が残る。ルールは攻撃の文字列ではなく、触られる場所と振る舞いで見る。
+# sid は 9,100,100 番台の私的な範囲を使っている。自組織の採番に合わせて変えること。
+
+# --- 入口 ---------------------------------------------------------------------------
+# xwconsole.cgi（CVE-2026-124010。2021年より前の古い版で root 権限のコマンド実行）への外部からのアクセス
+alert http $EXTERNAL_NET any -> $XWEB any (msg:"XWEB EVO xwconsole.cgi への外部からのアクセス"; flow:established,to_server; http.uri; content:"xwconsole.cgi"; nocase; classtype:attempted-admin; sid:9100101; rev:1;)
+
+# config.lua（CVE-2026-124014。認証なしの設定書き換え、5.8.8 まで影響）への外部からのアクセス
+alert http $EXTERNAL_NET any -> $XWEB any (msg:"XWEB EVO config.lua への外部からのアクセス"; flow:established,to_server; http.uri; content:"config.lua"; nocase; classtype:attempted-admin; sid:9100102; rev:1;)
+
+# --- 侵入後：監視機器が普段しない動きを始めた -----------------------------------------
+alert http $EXTERNAL_NET any -> $XWEB any (msg:"XWEB EVO が外部から実行ファイルを受信"; flow:established,to_client; file.data; content:"|7F 45 4C 46|"; startswith; classtype:trojan-activity; sid:9100111; rev:1;)
+alert http $XWEB any -> $EXTERNAL_NET any (msg:"XWEB EVO からダウンロード用ツールの通信"; flow:established,to_server; http.user_agent; pcre:"/^(wget|curl|busybox|python-requests)/i"; classtype:trojan-activity; sid:9100112; rev:1;)
+alert tcp $XWEB any -> $EXTERNAL_NET any (msg:"XWEB EVO から短時間に多数の外向き接続（踏み台化の疑い）"; flow:to_server; flags:S,12; threshold:type threshold, track by_src, count 30, seconds 60; classtype:trojan-activity; sid:9100113; rev:1;)
