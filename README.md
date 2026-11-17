@@ -23,7 +23,7 @@
 | `lifeline_exposure.py` | 計測スクリプト。4つのモードがある（下表） |
 | `sanitize_for_publication.py` | 計測結果から回線事業者名・都市・証明書・HTML ハッシュの値を取り除き、公開できる形にする |
 | `daily_watch.py` | 主要な約30指標を毎日1回数え、JSONL に追記する定点観測用。ファセットを取らないので記録はそのまま公開できる |
-| `scheduler/` | `daily_watch.py` を macOS の launchd で自動実行する設定スクリプト。毎朝の定点観測と、週1回の SolarView の版の集計（API キーはキーチェーンに保存） |
+| `scheduler/` | `daily_watch.py` を macOS の launchd で自動実行する設定スクリプト。毎朝の定点観測と、週1回の SolarView のバージョンの集計（API キーはキーチェーンに保存） |
 | `detection/solarview.rules` | SolarView を守る側のための Suricata ルールの例（入口の保守用画面へのアクセスと、侵入後の振る舞い）。Suricata 7.0.3 で構文と動作を確認 |
 | `detection/xweb.rules` | Copeland（旧 Dixell）XWEB EVO を守る側のための Suricata ルールの例（`xwconsole.cgi`・`config.lua` への外部からのアクセスと、侵入後の振る舞い）。2026-11 公表の CVE-2026-124010／124014 を受けて追加 |
 | `data/` | 記事の計測（2026-11-10）の結果。公開用に加工済み |
@@ -66,11 +66,11 @@ python3 sanitize_for_publication.py jp_ot_round3_*.json -d public/
 ```bash
 cd scheduler
 bash install_macos.sh     # ~/lifeline-watch に設置し、毎朝 7:13 に実行
-bash install_weekly_sv_macos.sh   # SolarView の版の分布を毎週月曜 7:31 に集計（任意）
+bash install_weekly_sv_macos.sh   # SolarView のバージョンの分布を毎週月曜 7:31 に集計（任意）
 bash uninstall_macos.sh   # 自動実行をすべて止め、キーチェーンの API キーを削除
 ```
 
-記録は `~/lifeline-watch/daily_watch.jsonl` に1日1行ずつ、版の集計は `~/lifeline-watch/sv_versions/` に週1ファイルずつたまります。
+記録は `~/lifeline-watch/daily_watch.jsonl` に1日1行ずつ、バージョンの集計は `~/lifeline-watch/sv_versions/` に週1ファイルずつたまります。
 
 ## 結果の読み方
 
@@ -86,7 +86,7 @@ bash uninstall_macos.sh   # 自動実行をすべて止め、キーチェーン�
 ## 倫理と注意
 
 - 他人の機器への接続、ログインの試行、IP アドレスの収集には使わないでください。
-- 結果を公開するときは、必ず `sanitize_for_publication.py` を通した版を使ってください。
+- 結果を公開するときは、必ず `sanitize_for_publication.py` を通したものを使ってください。
 - 特定の製品の露出を見つけた場合は、公表の前にメーカーや JPCERT/CC への共有を検討してください。
 
 ## 動作環境

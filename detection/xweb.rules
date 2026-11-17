@@ -7,7 +7,7 @@
 # sid は 9,100,100 番台の私的な範囲を使っている。自組織の採番に合わせて変えること。
 
 # --- 入口 ---------------------------------------------------------------------------
-# xwconsole.cgi（CVE-2026-124010。2021年より前の古い版で root 権限のコマンド実行）への外部からのアクセス
+# xwconsole.cgi（CVE-2026-124010。2021年より前の古いバージョンで root 権限のコマンド実行）への外部からのアクセス
 alert http $EXTERNAL_NET any -> $XWEB any (msg:"XWEB EVO xwconsole.cgi への外部からのアクセス"; flow:established,to_server; http.uri; content:"xwconsole.cgi"; nocase; classtype:attempted-admin; sid:9100101; rev:1;)
 
 # config.lua（CVE-2026-124014。認証なしの設定書き換え、5.8.8 まで影響）への外部からのアクセス

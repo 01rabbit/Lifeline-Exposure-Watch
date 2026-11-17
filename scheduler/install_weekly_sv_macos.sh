@@ -1,11 +1,11 @@
 #!/bin/bash
-# SolarView のファームウェアの版の分布（daily_watch.py --sv-versions）を、週1回自動で数える設定。
+# SolarView のファームウェアのバージョンの分布（daily_watch.py --sv-versions）を、週1回自動で数える設定。
 # install_macos.sh を先に実行し、~/lifeline-watch の仮想環境とキーチェーンの API キーができていることが前提。
 #
 # - 実行時刻：毎週月曜 7:31（Mac が眠っていた場合は、起動したときに実行される）
 # - 出力：~/lifeline-watch/sv_versions/sv_versions_YYYYMMDD_HHMMSS.json
 #   （count API のみ。IP アドレスは含まず、HTML ハッシュは値を捨てて件数だけを残す）
-# - 修正版（Ver.6.00 以上）が現れるか、Basic 認証の件数が増えるかを追うのが目的
+# - Ver.6.00 以上（脆弱性が修正された Ver.8.10 以降を含む）が現れるか、Basic 認証の件数が増えるかを追うのが目的
 #
 # 使い方（このスクリプトがあるフォルダで）:
 #   bash install_weekly_sv_macos.sh

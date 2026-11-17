@@ -66,15 +66,15 @@ WATCH = [
     ("storeview_world",     f'http.title:"StoreView" {N}'),
 ]
 
-# SolarView のファームウェアの版の分布を、Shodan が既に持っているバナーから数える（機器には接続しない）。
-# product/version は Shodan の判定、"Ver." 系の文字列は画面に表示される版の候補（一致範囲は要確認）。
+# SolarView のファームウェアのバージョンの分布を、Shodan が既に持っているバナーから数える（機器には接続しない）。
+# product/version は Shodan の判定、"Ver." 系の文字列は画面に表示されるバージョンの候補（一致範囲は要確認）。
 SV_VERSIONS = [
     ("sv_product_jp",     'product:"SolarView Compact" country:JP', [("version", 50), ("http.html_hash", 200), ("port", 10)]),
     ("sv_product_world",  'product:"SolarView Compact"',            [("version", 50), ("country", 20)]),
     ("sv_vuln_29303_jp",  'vuln:CVE-2022-29303 country:JP', None),   # 有料プランの一部でのみ使える
     ("sv_vuln_23333_jp",  'vuln:CVE-2023-23333 country:JP', None),
     ("sv_has_vuln_jp",    'http.html:"SolarView" country:JP has_vuln:true', None),
-    # 生存者バイアスの確認：版が見えるのは認証なしの画面だけか、認証付き（401）の画面は版が見えないか
+    # 生存者バイアスの確認：バージョンが見えるのは認証なしの画面だけか、認証付き（401）の画面はバージョンが見えないか
     ("sv_prod_top_jp",    'product:"SolarView Compact" http.title:"Top" country:JP',       [("version", 50)]),
     ("sv_prod_401_jp",    'product:"SolarView Compact" http.title:"Error 401" country:JP', [("version", 50)]),
     ("sv_prod_other_jp",  'product:"SolarView Compact" country:JP -http.title:"Top" -http.title:"Error 401"', [("version", 50), ("http.title", 20), ("port", 10)]),
@@ -110,7 +110,7 @@ def count(api, q, facets=None):
 def main():
     ap = argparse.ArgumentParser(description="主要指標の日次定点観測（Shodan count API のみ）")
     ap.add_argument("-f", "--file", default="daily_watch.jsonl", help="追記先（既定: daily_watch.jsonl）")
-    ap.add_argument("--sv-versions", action="store_true", help="SolarView のファームウェアの版の分布を数える（1回だけ）")
+    ap.add_argument("--sv-versions", action="store_true", help="SolarView のファームウェアのバージョンの分布を数える（1回だけ）")
     ap.add_argument("--pv-discover", action="store_true", help="国内の太陽光・エネルギー監視画面のタイトルを探す（内部用）")
     args = ap.parse_args()
 
