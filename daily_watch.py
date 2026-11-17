@@ -59,6 +59,10 @@ WATCH = [
     ("unitronics_ics_world", "tag:ics port:20256"),
     ("xweb_world",          f'http.title:"XWEB" {N}'),
     ("xweb_world_ssl",      f'http.title:"XWEB" {N} ssl:true'),
+    # XWEB EVO（2026-11 公表の CVE-2026-124010/124014、サポート終了）。実機の画面のタイトルで数える
+    ("xweb_evo_world",      'http.title:"XWEB EVO"'),
+    ("xweb_evo_jp",         'http.title:"XWEB EVO" country:JP'),
+    ("xweb_pro_world",      'http.title:"XWEB Pro"'),
     ("storeview_world",     f'http.title:"StoreView" {N}'),
 ]
 
